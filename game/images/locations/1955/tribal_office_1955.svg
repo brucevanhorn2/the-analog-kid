@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#F5F0E8"/>
+
+  <!-- Room walls — converted storefront -->
+  <line x1="120" y1="100" x2="1800" y2="100" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="100" x2="120" y2="860" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1800" y1="100" x2="1800" y2="860" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="120" y1="860" x2="1800" y2="860" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Fluorescent tube lights overhead — the institutional look -->
+  <!-- Tube fixture 1 -->
+  <rect x="400" y="100" width="340" height="22" rx="3" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="412" y="106" width="316" height="10" rx="2" fill="#F0EBD8" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Tube fixture 2 -->
+  <rect x="1180" y="100" width="340" height="22" rx="3" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="1192" y="106" width="316" height="10" rx="2" fill="#F0EBD8" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- Plain utilitarian ceiling -->
+  <rect x="120" y="100" width="1680" height="60" fill="#EDEAD8" stroke="none"/>
+
+  <!-- LINOLEUM FLOOR — worn, institutional -->
+  <g stroke="#1a1a1a" stroke-width="0.8" opacity="0.2">
+    <line x1="120" y1="870" x2="1800" y2="870"/>
+    <line x1="120" y1="900" x2="1800" y2="900"/>
+    <line x1="120" y1="930" x2="1800" y2="930"/>
+    <line x1="120" y1="960" x2="1800" y2="960"/>
+    <line x1="120" y1="990" x2="1800" y2="990"/>
+    <line x1="120" y1="1020" x2="1800" y2="1020"/>
+    <line x1="120" y1="1050" x2="1800" y2="1050"/>
+  </g>
+
+  <!-- STOREFRONT WINDOW — looking out to south side street -->
+  <rect x="1350" y="150" width="400" height="450" fill="#D5E5F0" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- Window frame grid -->
+  <line x1="1550" y1="150" x2="1550" y2="600" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="1350" y1="375" x2="1750" y2="375" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Window pane reflections -->
+  <line x1="1365" y1="165" x2="1390" y2="360" stroke="#F5F0E8" stroke-width="2" opacity="0.4"/>
+  <line x1="1565" y1="165" x2="1590" y2="360" stroke="#F5F0E8" stroke-width="2" opacity="0.4"/>
+  <!-- Street scene through window -->
+  <!-- Pavement / ground line -->
+  <line x1="1352" y1="560" x2="1748" y2="558" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Across-the-street building facade (south side) -->
+  <rect x="1365" y="390" width="175" height="168" fill="#CCC7B4" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Building windows across street -->
+  <rect x="1380" y="410" width="50" height="60" fill="#B8C8D4" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="1455" y="410" width="50" height="60" fill="#B8C8D4" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Further building right side -->
+  <rect x="1560" y="400" width="140" height="158" fill="#D0CBBC" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="1575" y="420" width="45" height="55" fill="#B8C8D4" stroke="#1a1a1a" stroke-width="1"/>
+  <rect x="1640" y="420" width="45" height="55" fill="#B8C8D4" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Sidewalk / curb -->
+  <line x1="1352" y1="555" x2="1748" y2="553" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Car passing — simplified outline -->
+  <rect x="1380" y="496" width="160" height="58" rx="8" fill="#D0CCBC" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="1408" y="486" width="104" height="36" rx="5" fill="#C4D0D8" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Window sill -->
+  <rect x="1340" y="596" width="420" height="20" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- GOVERNMENT POSTER on left wall -->
+  <rect x="140" y="140" width="300" height="400" fill="#D8D0B8" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Poster header bar (official-looking) -->
+  <rect x="140" y="140" width="300" height="48" fill="#888060" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Header text implied lines -->
+  <line x1="158" y1="160" x2="422" y2="160" stroke="#F5F0E8" stroke-width="2.5"/>
+  <line x1="165" y1="175" x2="415" y2="175" stroke="#F5F0E8" stroke-width="1.5"/>
+  <!-- Poster body — official text/form lines -->
+  <g stroke="#1a1a1a" stroke-width="1.5" opacity="0.6">
+    <line x1="158" y1="210" x2="422" y2="210"/>
+    <line x1="158" y1="225" x2="410" y2="225"/>
+    <line x1="158" y1="240" x2="418" y2="240"/>
+    <line x1="158" y1="255" x2="405" y2="255"/>
+    <line x1="158" y1="270" x2="420" y2="270"/>
+    <line x1="158" y1="285" x2="412" y2="285"/>
+  </g>
+  <!-- Official seal on poster (small) -->
+  <circle cx="290" cy="360" r="55" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="290" cy="360" r="45" fill="none" stroke="#1a1a1a" stroke-width="1"/>
+  <g stroke="#1a1a1a" stroke-width="1" opacity="0.5">
+    <line x1="290" y1="318" x2="290" y2="308"/>
+    <line x1="318" y1="330" x2="325" y2="322"/>
+    <line x1="330" y1="360" x2="340" y2="360"/>
+    <line x1="318" y1="390" x2="325" y2="398"/>
+    <line x1="290" y1="402" x2="290" y2="412"/>
+    <line x1="262" y1="390" x2="255" y2="398"/>
+    <line x1="250" y1="360" x2="240" y2="360"/>
+    <line x1="262" y1="330" x2="255" y2="322"/>
+  </g>
+  <!-- More text lines at bottom of poster -->
+  <g stroke="#1a1a1a" stroke-width="1.2" opacity="0.5">
+    <line x1="158" y1="430" x2="380" y2="430"/>
+    <line x1="158" y1="443" x2="390" y2="443"/>
+    <line x1="158" y1="456" x2="370" y2="456"/>
+    <line x1="158" y1="469" x2="385" y2="469"/>
+    <line x1="158" y1="482" x2="395" y2="482"/>
+    <line x1="158" y1="495" x2="378" y2="495"/>
+    <line x1="158" y1="508" x2="388" y2="508"/>
+    <line x1="158" y1="521" x2="375" y2="521"/>
+  </g>
+
+  <!-- Second poster — narrower, to right of first -->
+  <rect x="480" y="165" width="200" height="280" fill="#E0D8C0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="480" y="165" width="200" height="36" fill="#706848" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="495" y1="182" x2="668" y2="182" stroke="#F5F0E8" stroke-width="2"/>
+  <g stroke="#1a1a1a" stroke-width="1.2" opacity="0.5">
+    <line x1="495" y1="220" x2="668" y2="220"/>
+    <line x1="495" y1="234" x2="660" y2="234"/>
+    <line x1="495" y1="248" x2="665" y2="248"/>
+    <line x1="495" y1="262" x2="655" y2="262"/>
+    <line x1="495" y1="276" x2="662" y2="276"/>
+    <line x1="495" y1="290" x2="658" y2="290"/>
+    <line x1="495" y1="304" x2="666" y2="304"/>
+    <line x1="495" y1="318" x2="652" y2="318"/>
+    <line x1="495" y1="332" x2="660" y2="332"/>
+    <line x1="495" y1="346" x2="664" y2="346"/>
+    <line x1="495" y1="360" x2="656" y2="360"/>
+    <line x1="495" y1="374" x2="662" y2="374"/>
+    <line x1="495" y1="388" x2="650" y2="388"/>
+    <line x1="495" y1="402" x2="660" y2="402"/>
+    <line x1="495" y1="416" x2="655" y2="416"/>
+    <line x1="495" y1="430" x2="663" y2="430"/>
+  </g>
+
+  <!-- METAL DESK -->
+  <rect x="700" y="620" width="620" height="240" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="2.5" rx="2"/>
+  <line x1="700" y1="620" x2="1320" y2="620" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Desk surface overhang -->
+  <rect x="695" y="588" width="630" height="36" rx="2" fill="#CCCAB8" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Papers on desk -->
+  <rect x="720" y="555" width="200" height="160" rx="2" fill="#F0EBE0" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(-3, 820, 635)"/>
+  <g stroke="#1a1a1a" stroke-width="1" opacity="0.4" transform="rotate(-3, 820, 635)">
+    <line x1="735" y1="575" x2="905" y2="575"/>
+    <line x1="735" y1="590" x2="895" y2="590"/>
+    <line x1="735" y1="605" x2="900" y2="605"/>
+    <line x1="735" y1="620" x2="888" y2="620"/>
+    <line x1="735" y1="635" x2="898" y2="635"/>
+    <line x1="735" y1="650" x2="892" y2="650"/>
+    <line x1="735" y1="665" x2="900" y2="665"/>
+    <line x1="735" y1="680" x2="886" y2="680"/>
+    <line x1="735" y1="695" x2="894" y2="695"/>
+  </g>
+  <rect x="940" y="562" width="140" height="100" rx="2" fill="#EDE8DC" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(2, 1010, 612)"/>
+  <!-- Small lamp on desk -->
+  <line x1="1200" y1="590" x2="1200" y2="500" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M1175,500 Q1200,480 1225,500" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="1200" cy="505" r="6" fill="#E8E0C8"/>
+  <!-- Desk drawers -->
+  <rect x="710" y="630" width="160" height="100" rx="1" fill="#BCBAA8" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="730" y="668" width="48" height="8" rx="2" fill="#ACA8A0" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="880" y="630" width="160" height="100" rx="1" fill="#BCBAA8" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="900" y="668" width="48" height="8" rx="2" fill="#ACA8A0" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Desk legs -->
+  <line x1="705" y1="860" x2="705" y2="960" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1315" y1="860" x2="1315" y2="960" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- FILING CABINET — back wall right of window -->
+  <rect x="1240" y="470" width="170" height="390" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="2.5" rx="2"/>
+  <rect x="1250" y="480" width="150" height="112" rx="2" fill="#CCC8B8" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="1295" y="526" width="44" height="8" rx="2" fill="#B4B0A0" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="1250" y="602" width="150" height="112" rx="2" fill="#CCC8B8" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="1295" y="648" width="44" height="8" rx="2" fill="#B4B0A0" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="1250" y="724" width="150" height="112" rx="2" fill="#CCC8B8" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="1295" y="770" width="44" height="8" rx="2" fill="#B4B0A0" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Cabinet top -->
+  <rect x="1235" y="460" width="180" height="16" fill="#B8B4A4" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- FOLDING METAL CHAIRS — waiting area -->
+  <!-- Chair 1 -->
+  <g stroke="#1a1a1a" stroke-width="2">
+    <rect x="150" y="650" width="100" height="120" rx="3" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <rect x="150" y="580" width="100" height="72" rx="3" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <!-- Chair slats on back -->
+    <line x1="185" y1="588" x2="185" y2="648" stroke-width="1.5"/>
+    <line x1="215" y1="588" x2="215" y2="648" stroke-width="1.5"/>
+    <!-- Legs -->
+    <line x1="158" y1="770" x2="152" y2="840" stroke-linecap="round"/>
+    <line x1="242" y1="770" x2="248" y2="840" stroke-linecap="round"/>
+    <line x1="158" y1="770" x2="248" y2="770" stroke-linecap="round"/>
+  </g>
+  <!-- Chair 2 -->
+  <g stroke="#1a1a1a" stroke-width="2">
+    <rect x="295" y="650" width="100" height="120" rx="3" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <rect x="295" y="580" width="100" height="72" rx="3" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="330" y1="588" x2="330" y2="648" stroke-width="1.5"/>
+    <line x1="360" y1="588" x2="360" y2="648" stroke-width="1.5"/>
+    <line x1="303" y1="770" x2="297" y2="840" stroke-linecap="round"/>
+    <line x1="387" y1="770" x2="393" y2="840" stroke-linecap="round"/>
+    <line x1="303" y1="770" x2="387" y2="770" stroke-linecap="round"/>
+  </g>
+  <!-- Chair 3 -->
+  <g stroke="#1a1a1a" stroke-width="2">
+    <rect x="440" y="650" width="100" height="120" rx="3" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <rect x="440" y="580" width="100" height="72" rx="3" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="475" y1="588" x2="475" y2="648" stroke-width="1.5"/>
+    <line x1="505" y1="588" x2="505" y2="648" stroke-width="1.5"/>
+    <line x1="448" y1="770" x2="442" y2="840" stroke-linecap="round"/>
+    <line x1="532" y1="770" x2="538" y2="840" stroke-linecap="round"/>
+    <line x1="448" y1="770" x2="532" y2="770" stroke-linecap="round"/>
+  </g>
+  <!-- Chair 4 (empty) -->
+  <g stroke="#1a1a1a" stroke-width="2">
+    <rect x="585" y="650" width="100" height="120" rx="3" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <rect x="585" y="580" width="100" height="72" rx="3" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="620" y1="588" x2="620" y2="648" stroke-width="1.5"/>
+    <line x1="650" y1="588" x2="650" y2="648" stroke-width="1.5"/>
+    <line x1="593" y1="770" x2="587" y2="840" stroke-linecap="round"/>
+    <line x1="677" y1="770" x2="683" y2="840" stroke-linecap="round"/>
+    <line x1="593" y1="770" x2="677" y2="770" stroke-linecap="round"/>
+  </g>
+</svg>

@@ -1,0 +1,363 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#F5F0E8"/>
+
+  <!-- Room walls -->
+  <rect x="110" y="90" width="1700" height="750" fill="#F5F0E8" stroke="#1a1a1a" stroke-width="3" stroke-linejoin="round"/>
+  <line x1="110" y1="840" x2="1810" y2="840" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="90" x2="110" y2="840" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1810" y1="90" x2="1810" y2="840" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="110" y1="90" x2="1810" y2="90" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Floor — simple wood grain suggestion -->
+  <g stroke="#1a1a1a" stroke-width="1" opacity="0.2">
+    <line x1="110" y1="860" x2="1810" y2="860"/>
+    <line x1="110" y1="880" x2="1810" y2="880"/>
+    <line x1="110" y1="900" x2="1810" y2="900"/>
+    <line x1="110" y1="920" x2="1810" y2="920"/>
+    <line x1="110" y1="940" x2="1810" y2="940"/>
+    <line x1="110" y1="960" x2="1810" y2="960"/>
+    <line x1="110" y1="980" x2="1810" y2="980"/>
+    <line x1="110" y1="1000" x2="1810" y2="1000"/>
+    <line x1="110" y1="1020" x2="1810" y2="1020"/>
+    <line x1="110" y1="1040" x2="1810" y2="1040"/>
+  </g>
+
+  <!-- LEFT BOOKSHELF — floor to ceiling -->
+  <rect x="110" y="90" width="200" height="750" fill="#EDE8DC" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Shelf boards -->
+  <line x1="112" y1="190" x2="308" y2="190" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="112" y1="290" x2="308" y2="290" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="112" y1="390" x2="308" y2="390" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="112" y1="490" x2="308" y2="490" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="112" y1="590" x2="308" y2="590" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="112" y1="690" x2="308" y2="690" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Books on shelves — left bookcase -->
+  <!-- Shelf 1 (top) -->
+  <g fill="#D4CFC0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="120" y="105" width="14" height="82"/>
+    <rect x="135" y="108" width="18" height="79"/>
+    <rect x="154" y="100" width="12" height="87"/>
+    <rect x="167" y="106" width="16" height="81"/>
+    <rect x="184" y="102" width="11" height="85"/>
+    <rect x="196" y="109" width="15" height="78"/>
+    <rect x="212" y="104" width="13" height="83"/>
+    <rect x="226" y="107" width="17" height="80"/>
+    <rect x="244" y="103" width="12" height="84"/>
+    <rect x="257" y="106" width="14" height="81"/>
+    <rect x="272" y="101" width="16" height="86"/>
+    <rect x="289" y="108" width="13" height="79"/>
+  </g>
+  <!-- Shelf 2 -->
+  <g fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="118" y="202" width="16" height="85"/>
+    <rect x="136" y="205" width="12" height="82"/>
+    <rect x="149" y="198" width="18" height="89"/>
+    <rect x="168" y="203" width="14" height="84"/>
+    <rect x="183" y="200" width="11" height="87"/>
+    <rect x="195" y="206" width="16" height="81"/>
+    <rect x="212" y="201" width="13" height="86"/>
+    <rect x="226" y="204" width="17" height="83"/>
+    <rect x="244" y="199" width="12" height="88"/>
+    <rect x="257" y="205" width="15" height="82"/>
+    <rect x="273" y="202" width="18" height="85"/>
+    <rect x="292" y="203" width="11" height="84"/>
+  </g>
+  <!-- Shelf 3 -->
+  <g fill="#D4CFC0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="120" y="302" width="14" height="85"/>
+    <rect x="135" y="305" width="18" height="82"/>
+    <rect x="154" y="298" width="12" height="89"/>
+    <rect x="167" y="303" width="16" height="84"/>
+    <rect x="184" y="300" width="11" height="87"/>
+    <rect x="196" y="306" width="15" height="81"/>
+    <rect x="212" y="301" width="13" height="86"/>
+    <rect x="226" y="304" width="17" height="83"/>
+    <rect x="244" y="299" width="12" height="88"/>
+    <rect x="257" y="306" width="14" height="81"/>
+    <rect x="272" y="303" width="16" height="84"/>
+    <rect x="289" y="300" width="13" height="87"/>
+  </g>
+  <!-- Additional shelves with books, simplified -->
+  <g fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="120" y="402" width="15" height="85"/>
+    <rect x="136" y="405" width="20" height="82"/>
+    <rect x="157" y="398" width="12" height="89"/>
+    <rect x="170" y="403" width="16" height="84"/>
+    <rect x="187" y="400" width="13" height="87"/>
+    <rect x="201" y="406" width="15" height="81"/>
+    <rect x="217" y="401" width="11" height="86"/>
+    <rect x="229" y="404" width="18" height="83"/>
+    <rect x="248" y="399" width="14" height="88"/>
+    <rect x="263" y="405" width="16" height="82"/>
+    <rect x="280" y="402" width="12" height="85"/>
+    <rect x="293" y="403" width="9" height="84"/>
+  </g>
+  <g fill="#D4CFC0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="120" y="502" width="14" height="85"/>
+    <rect x="135" y="505" width="18" height="82"/>
+    <rect x="154" y="498" width="12" height="89"/>
+    <rect x="167" y="503" width="16" height="84"/>
+    <rect x="184" y="500" width="11" height="87"/>
+    <rect x="196" y="506" width="15" height="81"/>
+    <rect x="212" y="501" width="13" height="86"/>
+    <rect x="226" y="504" width="17" height="83"/>
+    <rect x="244" y="499" width="12" height="88"/>
+    <rect x="257" y="506" width="14" height="81"/>
+    <rect x="272" y="503" width="16" height="84"/>
+    <rect x="289" y="500" width="13" height="87"/>
+  </g>
+  <g fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="120" y="602" width="16" height="85"/>
+    <rect x="137" y="605" width="12" height="82"/>
+    <rect x="150" y="598" width="18" height="89"/>
+    <rect x="169" y="603" width="14" height="84"/>
+    <rect x="184" y="600" width="11" height="87"/>
+    <rect x="196" y="606" width="16" height="81"/>
+    <rect x="213" y="601" width="13" height="86"/>
+    <rect x="227" y="604" width="17" height="83"/>
+    <rect x="245" y="599" width="12" height="88"/>
+    <rect x="258" y="605" width="15" height="82"/>
+    <rect x="274" y="602" width="18" height="85"/>
+    <rect x="293" y="603" width="11" height="84"/>
+  </g>
+  <g fill="#D4CFC0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="120" y="702" width="14" height="85"/>
+    <rect x="135" y="705" width="18" height="82"/>
+    <rect x="154" y="698" width="12" height="89"/>
+    <rect x="167" y="703" width="16" height="84"/>
+    <rect x="184" y="700" width="11" height="87"/>
+    <rect x="196" y="706" width="15" height="81"/>
+    <rect x="212" y="701" width="13" height="86"/>
+    <rect x="226" y="704" width="17" height="83"/>
+    <rect x="244" y="699" width="12" height="88"/>
+  </g>
+
+  <!-- RIGHT BOOKSHELF — floor to ceiling -->
+  <rect x="1610" y="90" width="200" height="750" fill="#EDE8DC" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="1612" y1="190" x2="1808" y2="190" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1612" y1="290" x2="1808" y2="290" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1612" y1="390" x2="1808" y2="390" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1612" y1="490" x2="1808" y2="490" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1612" y1="590" x2="1808" y2="590" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1612" y1="690" x2="1808" y2="690" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Books — right shelf -->
+  <g fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="1618" y="105" width="15" height="82"/>
+    <rect x="1634" y="108" width="11" height="79"/>
+    <rect x="1646" y="101" width="18" height="86"/>
+    <rect x="1665" y="105" width="13" height="82"/>
+    <rect x="1679" y="103" width="16" height="84"/>
+    <rect x="1696" y="107" width="12" height="80"/>
+    <rect x="1709" y="102" width="15" height="85"/>
+    <rect x="1725" y="106" width="17" height="81"/>
+    <rect x="1743" y="100" width="11" height="87"/>
+    <rect x="1755" y="105" width="14" height="82"/>
+    <rect x="1770" y="102" width="16" height="85"/>
+    <rect x="1787" y="107" width="13" height="80"/>
+  </g>
+  <g fill="#D4CFC0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="1618" y="202" width="14" height="85"/>
+    <rect x="1633" y="205" width="18" height="82"/>
+    <rect x="1652" y="198" width="12" height="89"/>
+    <rect x="1665" y="203" width="16" height="84"/>
+    <rect x="1682" y="200" width="11" height="87"/>
+    <rect x="1694" y="206" width="15" height="81"/>
+    <rect x="1710" y="201" width="13" height="86"/>
+    <rect x="1724" y="204" width="17" height="83"/>
+    <rect x="1742" y="199" width="12" height="88"/>
+    <rect x="1755" y="205" width="15" height="82"/>
+    <rect x="1771" y="202" width="18" height="85"/>
+    <rect x="1790" y="203" width="11" height="84"/>
+  </g>
+  <g fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="1618" y="302" width="16" height="85"/>
+    <rect x="1635" y="305" width="12" height="82"/>
+    <rect x="1648" y="298" width="18" height="89"/>
+    <rect x="1667" y="303" width="14" height="84"/>
+    <rect x="1682" y="300" width="11" height="87"/>
+    <rect x="1694" y="306" width="16" height="81"/>
+    <rect x="1711" y="301" width="13" height="86"/>
+    <rect x="1725" y="304" width="17" height="83"/>
+    <rect x="1743" y="299" width="12" height="88"/>
+    <rect x="1756" y="305" width="15" height="82"/>
+    <rect x="1772" y="302" width="18" height="85"/>
+    <rect x="1791" y="303" width="11" height="84"/>
+  </g>
+  <g fill="#D4CFC0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="1618" y="402" width="14" height="85"/>
+    <rect x="1633" y="405" width="20" height="82"/>
+    <rect x="1654" y="398" width="12" height="89"/>
+    <rect x="1667" y="403" width="16" height="84"/>
+    <rect x="1684" y="400" width="13" height="87"/>
+    <rect x="1698" y="406" width="15" height="81"/>
+    <rect x="1714" y="401" width="11" height="86"/>
+    <rect x="1726" y="404" width="18" height="83"/>
+    <rect x="1745" y="399" width="14" height="88"/>
+    <rect x="1760" y="405" width="16" height="82"/>
+    <rect x="1777" y="402" width="12" height="85"/>
+    <rect x="1790" y="403" width="11" height="84"/>
+  </g>
+  <g fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="1618" y="502" width="15" height="85"/>
+    <rect x="1634" y="505" width="18" height="82"/>
+    <rect x="1653" y="498" width="12" height="89"/>
+    <rect x="1666" y="503" width="16" height="84"/>
+    <rect x="1683" y="500" width="11" height="87"/>
+    <rect x="1695" y="506" width="15" height="81"/>
+    <rect x="1711" y="501" width="13" height="86"/>
+    <rect x="1725" y="504" width="17" height="83"/>
+    <rect x="1743" y="499" width="12" height="88"/>
+    <rect x="1756" y="506" width="14" height="81"/>
+    <rect x="1771" y="503" width="16" height="84"/>
+    <rect x="1788" y="500" width="13" height="87"/>
+  </g>
+  <g fill="#D4CFC0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="1618" y="602" width="14" height="85"/>
+    <rect x="1633" y="605" width="18" height="82"/>
+    <rect x="1652" y="598" width="12" height="89"/>
+    <rect x="1665" y="603" width="16" height="84"/>
+    <rect x="1682" y="600" width="11" height="87"/>
+    <rect x="1694" y="606" width="15" height="81"/>
+    <rect x="1710" y="601" width="13" height="86"/>
+    <rect x="1724" y="604" width="17" height="83"/>
+    <rect x="1742" y="599" width="12" height="88"/>
+  </g>
+  <g fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1">
+    <rect x="1618" y="702" width="16" height="85"/>
+    <rect x="1635" y="705" width="12" height="82"/>
+    <rect x="1648" y="698" width="18" height="89"/>
+    <rect x="1667" y="703" width="14" height="84"/>
+    <rect x="1682" y="700" width="11" height="87"/>
+    <rect x="1694" y="706" width="16" height="81"/>
+    <rect x="1711" y="701" width="13" height="86"/>
+  </g>
+
+  <!-- SOUTH WINDOW — the important one -->
+  <rect x="1100" y="110" width="380" height="400" fill="#DDE8F0" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- Window frame cross -->
+  <line x1="1290" y1="110" x2="1290" y2="510" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="1100" y1="310" x2="1480" y2="310" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Window sill -->
+  <rect x="1090" y="506" width="400" height="22" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Railroad tracks through window — distant, near horizon -->
+  <!-- Sky in upper portion -->
+  <rect x="1103" y="113" width="374" height="290" fill="#E0EAF0"/>
+  <!-- Ground lower portion -->
+  <rect x="1103" y="403" width="374" height="104" fill="#D8D0C0"/>
+  <!-- Track lines — two parallel horizontal rails, very far away -->
+  <line x1="1103" y1="428" x2="1477" y2="418" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <line x1="1103" y1="438" x2="1477" y2="428" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Railroad ties (cross-hatching) -->
+  <g stroke="#1a1a1a" stroke-width="1.5" opacity="0.6">
+    <line x1="1120" y1="425" x2="1120" y2="442"/>
+    <line x1="1145" y1="424" x2="1145" y2="441"/>
+    <line x1="1170" y1="423" x2="1170" y2="440"/>
+    <line x1="1200" y1="422" x2="1200" y2="439"/>
+    <line x1="1230" y1="422" x2="1230" y2="439"/>
+    <line x1="1260" y1="421" x2="1260" y2="438"/>
+    <line x1="1290" y1="421" x2="1290" y2="438"/>
+    <line x1="1320" y1="420" x2="1320" y2="437"/>
+    <line x1="1350" y1="420" x2="1350" y2="437"/>
+    <line x1="1380" y1="420" x2="1380" y2="437"/>
+    <line x1="1410" y1="419" x2="1410" y2="436"/>
+    <line x1="1440" y1="419" x2="1440" y2="436"/>
+    <line x1="1465" y1="419" x2="1465" y2="436"/>
+  </g>
+  <!-- Horizon line (tree line suggestion) -->
+  <line x1="1103" y1="403" x2="1477" y2="403" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Small distant building suggestion -->
+  <rect x="1350" y="368" width="40" height="35" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1"/>
+  <line x1="1370" y1="350" x2="1370" y2="368" stroke="#1a1a1a" stroke-width="1"/>
+
+  <!-- CHALKBOARD — on right side of back wall -->
+  <rect x="360" y="120" width="680" height="320" fill="#3A4A3A" stroke="#1a1a1a" stroke-width="3" rx="2"/>
+  <!-- Chalk tray -->
+  <rect x="360" y="440" width="680" height="18" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Mathematical notation — lines suggesting formulas -->
+  <g stroke="#F5F0E8" stroke-width="2" stroke-linecap="round" opacity="0.8">
+    <!-- Line 1: equation-like -->
+    <line x1="400" y1="175" x2="460" y2="175"/>
+    <line x1="475" y1="175" x2="490" y2="175"/>
+    <line x1="505" y1="175" x2="580" y2="175"/>
+    <line x1="595" y1="175" x2="620" y2="175"/>
+    <circle cx="466" cy="175" r="10" fill="none" stroke="#F5F0E8" stroke-width="2"/>
+    <!-- Fraction bar -->
+    <line x1="640" y1="167" x2="720" y2="167"/>
+    <line x1="645" y1="183" x2="715" y2="183"/>
+    <line x1="638" y1="175" x2="722" y2="175"/>
+    <!-- Line 2 -->
+    <line x1="400" y1="225" x2="500" y2="225"/>
+    <line x1="510" y1="215" x2="510" y2="235"/>
+    <line x1="520" y1="225" x2="620" y2="225"/>
+    <!-- Sigma-like shape -->
+    <path d="M640,210 L700,210 L665,225 L700,240 L640,240" fill="none" stroke="#F5F0E8" stroke-width="2"/>
+    <!-- Line 3 -->
+    <line x1="400" y1="275" x2="450" y2="275"/>
+    <line x1="440" y1="265" x2="460" y2="285"/>
+    <line x1="460" y1="265" x2="440" y2="285"/>
+    <line x1="475" y1="275" x2="580" y2="275"/>
+    <!-- Delta triangle -->
+    <path d="M595,285 L625,245 L655,285 Z" fill="none" stroke="#F5F0E8" stroke-width="2"/>
+    <line x1="665" y1="275" x2="750" y2="275"/>
+    <!-- Line 4: integral-like -->
+    <path d="M400,320 Q410,300 400,340" fill="none" stroke="#F5F0E8" stroke-width="2.5"/>
+    <line x1="415" y1="310" x2="520" y2="310"/>
+    <line x1="415" y1="330" x2="520" y2="330"/>
+    <path d="M535,300 L535,340" fill="none" stroke="#F5F0E8" stroke-width="2"/>
+    <line x1="550" y1="320" x2="680" y2="320"/>
+    <!-- Subscript suggestion -->
+    <line x1="490" y1="380" x2="540" y2="380"/>
+    <line x1="550" y1="380" x2="590" y2="380"/>
+    <line x1="602" y1="380" x2="660" y2="380"/>
+    <line x1="490" y1="395" x2="530" y2="395"/>
+    <line x1="545" y1="395" x2="600" y2="395"/>
+  </g>
+
+  <!-- DESK — center, buried in papers -->
+  <rect x="550" y="640" width="640" height="200" fill="#E0DAC8" stroke="#1a1a1a" stroke-width="2.5" rx="3"/>
+  <!-- Desk surface with piled papers -->
+  <!-- Papers stacked, overlapping rectangles -->
+  <rect x="560" y="620" width="180" height="130" rx="2" fill="#F0EBE0" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(-4, 650, 685)"/>
+  <rect x="570" y="615" width="160" height="120" rx="2" fill="#EDE8DC" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(2, 650, 675)"/>
+  <rect x="555" y="625" width="170" height="115" rx="2" fill="#F5F0E8" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(-2, 640, 683)"/>
+  <!-- Lines on papers -->
+  <line x1="570" y1="648" x2="700" y2="642" stroke="#1a1a1a" stroke-width="1" opacity="0.5"/>
+  <line x1="570" y1="658" x2="690" y2="652" stroke="#1a1a1a" stroke-width="1" opacity="0.5"/>
+  <line x1="570" y1="668" x2="695" y2="662" stroke="#1a1a1a" stroke-width="1" opacity="0.5"/>
+
+  <!-- More stacks of papers and folders -->
+  <rect x="760" y="618" width="140" height="100" rx="2" fill="#E8E3D4" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(3, 830, 668)"/>
+  <rect x="770" y="612" width="130" height="95" rx="2" fill="#F0EBE0" stroke="#1a1a1a" stroke-width="1.5" transform="rotate(-2, 835, 660)"/>
+  <!-- Folder tab -->
+  <rect x="765" y="610" width="60" height="12" rx="2" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- Books piled on desk corner -->
+  <rect x="930" y="600" width="100" height="22" rx="1" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="2" transform="rotate(-1, 980, 611)"/>
+  <rect x="928" y="578" width="105" height="24" rx="1" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2" transform="rotate(2, 980, 590)"/>
+  <rect x="932" y="556" width="98" height="22" rx="1" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="2" transform="rotate(-2, 981, 567)"/>
+  <rect x="930" y="534" width="102" height="22" rx="1" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2" transform="rotate(1, 981, 545)"/>
+
+  <!-- Inkwell and pen on desk -->
+  <circle cx="680" cy="700" r="18" fill="#2A2A35" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="680" y1="685" x2="720" y2="650" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Desk legs -->
+  <line x1="565" y1="840" x2="565" y2="950" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1180" y1="840" x2="1180" y2="950" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="600" y1="840" x2="600" y2="930" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1145" y1="840" x2="1145" y2="930" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- VISITOR CHAIR — simple wooden chair facing desk -->
+  <rect x="730" y="890" width="140" height="120" rx="4" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Chair back -->
+  <rect x="730" y="820" width="140" height="75" rx="4" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Chair back slats -->
+  <line x1="770" y1="828" x2="770" y2="890" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="800" y1="828" x2="800" y2="890" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="830" y1="828" x2="830" y2="890" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Chair legs -->
+  <line x1="740" y1="1010" x2="740" y2="1060" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="860" y1="1010" x2="860" y2="1060" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="740" y1="1010" x2="745" y2="1070" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="860" y1="1010" x2="855" y2="1070" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

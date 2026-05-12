@@ -1,0 +1,190 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#F5F0E8"/>
+
+  <!-- Big Oklahoma sky — 60% of image height = 648px -->
+  <rect x="0" y="0" width="1920" height="648" fill="#DDE8F2"/>
+
+  <!-- Horizon line -->
+  <line x1="0" y1="648" x2="1920" y2="648" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Flat ground plane -->
+  <rect x="0" y="648" width="1920" height="432" fill="#C8BEA8"/>
+
+  <!-- Sky gradation suggestion — faint horizontal bands near horizon -->
+  <rect x="0" y="580" width="1920" height="68" fill="#D0DCE8" opacity="0.5"/>
+  <rect x="0" y="608" width="1920" height="40" fill="#C8D4E0" opacity="0.4"/>
+
+  <!-- CLOUDS -->
+  <g fill="#F5F0E8" stroke="#1a1a1a" stroke-width="1.5">
+    <!-- Large cloud left -->
+    <path d="M140,200 Q155,175 182,182 Q192,162 218,170 Q228,150 258,160 Q280,145 298,163 Q318,156 325,175 Q342,168 347,190 Q349,212 322,216 Q316,230 285,226 Q274,240 248,234 Q228,242 210,234 Q192,240 178,228 Q160,230 154,213 Q138,208 142,192 Z" fill="#F5F0E8"/>
+    <!-- Cloud right large -->
+    <path d="M1450,155 Q1470,128 1502,136 Q1514,115 1544,124 Q1558,105 1588,116 Q1612,108 1620,129 Q1640,122 1646,145 Q1650,170 1622,174 Q1614,188 1582,184 Q1570,198 1544,192 Q1522,202 1504,194 Q1484,200 1470,188 Q1452,186 1454,168 Z" fill="#F5F0E8"/>
+    <!-- Mid cloud -->
+    <path d="M800,248 Q815,228 836,235 Q845,220 865,228 Q876,213 898,222 Q912,216 916,231 Q928,225 932,244 Q935,264 914,267 Q908,278 888,274 Q880,285 862,280 Q848,288 836,281 Q820,284 814,271 Q798,268 800,250 Z" fill="#F5F0E8"/>
+    <!-- Wispy cloud right mid -->
+    <path d="M1100,310 Q1110,298 1124,302 Q1130,292 1144,297 Q1152,288 1165,294 Q1175,290 1177,299 Q1185,295 1187,307 Q1188,320 1175,322 Q1170,330 1156,327 Q1150,334 1140,331 Q1130,335 1122,330 Q1112,330 1110,320 Z" fill="#F5F0E8"/>
+  </g>
+
+  <!-- DIRT ROAD — coming in from right side, leading to site -->
+  <path d="M1920,750 Q1500,700 1400,648 L1500,648 Q1600,700 1920,755 Z" fill="#B8AE98" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Road ruts / tracks -->
+  <path d="M1920,732 Q1560,690 1440,648" fill="none" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="20,8" opacity="0.4"/>
+  <path d="M1920,748 Q1575,703 1455,648" fill="none" stroke="#1a1a1a" stroke-width="1" stroke-dasharray="20,8" opacity="0.4"/>
+
+  <!-- COMPANY SHACK / OFFICE — right side, small rectangular structure -->
+  <rect x="1520" y="528" width="300" height="180" fill="#C8C0A8" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Shack roof (gable) -->
+  <polygon points="1505,528 1670,480 1835,528" fill="#B8B0A0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Roof ridge line -->
+  <line x1="1670" y1="480" x2="1670" y2="480" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Shack windows (small) -->
+  <rect x="1545" y="555" width="65" height="60" fill="#C4D4E0" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1578" y1="555" x2="1578" y2="615" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="1545" y1="585" x2="1610" y2="585" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Shack door -->
+  <rect x="1655" y="576" width="60" height="132" fill="#B8B0A0" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="1706" cy="642" r="5" fill="#C8C0A8" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Second small window -->
+  <rect x="1748" y="555" width="55" height="55" fill="#C4D4E0" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="1775" y1="555" x2="1775" y2="610" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Shack skirt/foundation line -->
+  <line x1="1520" y1="706" x2="1820" y2="706" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Utility wire from shack -->
+  <path d="M1670,480 Q1200,440 900,430" fill="none" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- SCRUB BRUSH / SPARSE VEGETATION along horizon -->
+  <!-- Brush left -->
+  <g stroke="#1a1a1a" stroke-width="2" stroke-linecap="round">
+    <line x1="200" y1="648" x2="198" y2="618"/>
+    <line x1="198" y1="635" x2="178" y2="620"/>
+    <line x1="198" y1="625" x2="214" y2="612"/>
+    <line x1="220" y1="648" x2="222" y2="626"/>
+    <line x1="222" y1="636" x2="238" y2="622"/>
+    <!-- Small bush shape -->
+    <line x1="280" y1="648" x2="278" y2="630"/>
+    <line x1="278" y1="638" x2="264" y2="626"/>
+    <line x1="278" y1="632" x2="290" y2="622"/>
+    <line x1="295" y1="648" x2="296" y2="633"/>
+  </g>
+  <!-- Brush center-right beyond pump -->
+  <g stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round">
+    <line x1="1350" y1="648" x2="1348" y2="630"/>
+    <line x1="1348" y1="638" x2="1334" y2="626"/>
+    <line x1="1348" y1="630" x2="1360" y2="620"/>
+    <line x1="1365" y1="648" x2="1367" y2="633"/>
+    <line x1="1380" y1="648" x2="1382" y2="635"/>
+    <line x1="1382" y1="640" x2="1392" y2="628"/>
+  </g>
+  <!-- Scraggly tree far left -->
+  <line x1="95" y1="648" x2="92" y2="490" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="92" y1="560" x2="58" y2="520" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <line x1="92" y1="540" x2="48" y2="515" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="92" y1="535" x2="62" y2="505" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="92" y1="525" x2="125" y2="500" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <line x1="92" y1="510" x2="118" y2="492" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+  <line x1="92" y1="505" x2="72" y2="490" stroke="#1a1a1a" stroke-width="1.5" stroke-linecap="round"/>
+
+  <!-- DERRICK STRUCTURE — background, center-right area -->
+  <!-- Main derrick triangle/ladder framework -->
+  <!-- Left leg -->
+  <line x1="840" y1="648" x2="880" y2="240" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Right leg -->
+  <line x1="1080" y1="648" x2="1040" y2="240" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Apex -->
+  <line x1="880" y1="240" x2="1040" y2="240" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Crown block at apex -->
+  <rect x="938" y="218" width="84" height="26" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Traveling block (middle) -->
+  <rect x="952" y="430" width="56" height="38" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Hook/swivel -->
+  <line x1="980" y1="468" x2="980" y2="490" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Horizontal bracing members — ladder rungs of derrick -->
+  <g stroke="#1a1a1a" stroke-width="1.5" opacity="0.8">
+    <line x1="848" y1="584" x2="1072" y2="584"/>
+    <line x1="854" y1="520" x2="1066" y2="520"/>
+    <line x1="860" y1="456" x2="1060" y2="456"/>
+    <line x1="866" y1="392" x2="1054" y2="392"/>
+    <line x1="872" y1="328" x2="1048" y2="328"/>
+    <!-- Diagonal cross-bracing -->
+    <line x1="848" y1="584" x2="860" y2="456"/>
+    <line x1="860" y1="456" x2="848" y2="328"/>
+    <line x1="1072" y1="584" x2="1060" y2="456"/>
+    <line x1="1060" y1="456" x2="1072" y2="328"/>
+    <!-- Upper cross-bracing -->
+    <line x1="866" y1="392" x2="878" y2="278"/>
+    <line x1="1054" y1="392" x2="1042" y2="278"/>
+    <line x1="878" y1="278" x2="1042" y2="278"/>
+  </g>
+  <!-- Derrick base structure (A-frame subbase) -->
+  <line x1="800" y1="648" x2="840" y2="600" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="840" y1="600" x2="840" y2="648" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1120" y1="648" x2="1080" y2="600" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1080" y1="600" x2="1080" y2="648" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Base platform boards -->
+  <rect x="795" y="636" width="330" height="20" fill="#C0BAA8" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Drill string suggestion -->
+  <line x1="980" y1="490" x2="980" y2="636" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="8,4"/>
+
+  <!-- PUMP JACK (DONKEY PUMP) — foreground, center-left -->
+  <!-- Walking beam / lever arm — the iconic rocking horse shape -->
+  <!-- Base/Sampson post -->
+  <rect x="488" y="580" width="80" height="180" fill="#C0BCAC" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Post cross-bracing -->
+  <line x1="488" y1="620" x2="568" y2="680" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="568" y1="620" x2="488" y2="680" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Bearing box at top of Sampson post -->
+  <rect x="476" y="562" width="104" height="28" rx="3" fill="#B8B4A4" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Walking beam — long lever, pivots at center -->
+  <rect x="300" y="530" width="540" height="30" rx="6" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Pivot pin at center (Sampson post top) -->
+  <circle cx="528" cy="545" r="12" fill="#B0ACA0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Horse head / curved front end of walking beam -->
+  <path d="M300,530 Q280,525 270,545 Q265,560 280,570 Q295,565 300,560 L300,530 Z" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Horsehead pivot and well connection -->
+  <line x1="278" y1="565" x2="278" y2="680" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round" stroke-dasharray="6,5"/>
+  <!-- Polish rod stub at wellhead -->
+  <rect x="258" y="676" width="40" height="14" rx="3" fill="#B0ACA0" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="278" y1="690" x2="278" y2="760" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Wellhead / stuffing box -->
+  <rect x="235" y="756" width="86" height="32" rx="3" fill="#B8B4A4" stroke="#1a1a1a" stroke-width="2.5"/>
+  <rect x="218" y="784" width="120" height="20" rx="2" fill="#B0ACA0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Well casing at ground -->
+  <rect x="245" y="800" width="66" height="50" fill="#A8A498" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Counterweight end of walking beam (back) -->
+  <!-- Crank arm -->
+  <line x1="840" y1="545" x2="840" y2="680" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Counterweight box -->
+  <rect x="780" y="545" width="140" height="60" rx="4" fill="#B8B4A4" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Counterweight bolts/rivets -->
+  <circle cx="800" cy="575" r="5" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="840" cy="575" r="5" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <circle cx="900" cy="575" r="5" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Pitman arm connecting crank to eccentric -->
+  <line x1="840" y1="680" x2="760" y2="680" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Eccentric / gear box -->
+  <rect x="700" y="648" width="100" height="80" rx="4" fill="#C0BCA8" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Gear box details -->
+  <circle cx="750" cy="688" r="22" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Motor housing -->
+  <rect x="580" y="656" width="130" height="72" rx="3" fill="#B8B4A4" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Motor exhaust/fins -->
+  <g stroke="#1a1a1a" stroke-width="1.5">
+    <line x1="595" y1="658" x2="595" y2="726"/>
+    <line x1="610" y1="658" x2="610" y2="726"/>
+    <line x1="625" y1="658" x2="625" y2="726"/>
+    <line x1="640" y1="658" x2="640" y2="726"/>
+  </g>
+
+  <!-- Ground shadow of pump jack structure -->
+  <ellipse cx="530" cy="755" rx="280" ry="22" fill="#B8B0A0" opacity="0.4"/>
+
+  <!-- Pipe on ground — flow line to tank -->
+  <line x1="256" y1="800" x2="120" y2="800" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Small tank left edge -->
+  <rect x="50" y="730" width="90" height="120" rx="5" fill="#C0BCAC" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Tank seams -->
+  <line x1="50" y1="770" x2="140" y2="770" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="50" y1="810" x2="140" y2="810" stroke="#1a1a1a" stroke-width="1.5"/>
+</svg>

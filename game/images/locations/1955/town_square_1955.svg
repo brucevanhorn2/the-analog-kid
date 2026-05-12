@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#F5F0E8"/>
+
+  <!-- Sky -->
+  <rect x="0" y="0" width="1920" height="580" fill="#E8EFF5"/>
+
+  <!-- Cloud shapes — simple, not cartoonish -->
+  <g fill="#F5F0E8" stroke="#1a1a1a" stroke-width="1.5" opacity="0.8">
+    <path d="M180,140 Q200,118 230,125 Q240,105 265,112 Q275,95 300,105 Q320,90 340,108 Q360,102 365,120 Q380,115 385,135 Q385,155 360,158 Q355,170 325,168 Q315,180 290,175 Q275,185 255,178 Q235,185 220,175 Q200,178 190,162 Q175,158 178,142 Z" fill="#F5F0E8"/>
+    <path d="M1200,90 Q1220,70 1255,78 Q1268,58 1295,67 Q1308,50 1335,62 Q1358,55 1365,75 Q1382,70 1388,92 Q1390,112 1365,115 Q1358,128 1328,125 Q1318,137 1292,132 Q1275,142 1252,135 Q1232,142 1218,130 Q1200,127 1202,108 Z" fill="#F5F0E8"/>
+    <path d="M800,165 Q815,148 838,154 Q848,140 866,147 Q878,133 898,142 Q912,137 916,152 Q928,148 930,164 Q932,180 914,183 Q908,193 888,190 Q882,200 866,196 Q852,204 840,197 Q826,200 820,188 Q806,184 808,168 Z" fill="#F5F0E8"/>
+  </g>
+
+  <!-- Ground plane -->
+  <rect x="0" y="580" width="1920" height="500" fill="#D4CFC0"/>
+
+  <!-- Horizon line -->
+  <line x1="0" y1="580" x2="1920" y2="580" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- BRICK PATH — leading to statue, center -->
+  <!-- Path surface -->
+  <path d="M800,1080 L820,580 L1100,580 L1120,1080 Z" fill="#C4B8A8" stroke="#1a1a1a" stroke-width="1"/>
+  <!-- Brick pattern on path -->
+  <g stroke="#1a1a1a" stroke-width="1" opacity="0.4">
+    <!-- Horizontal courses -->
+    <line x1="808" y1="650" x2="1112" y2="650"/>
+    <line x1="814" y1="720" x2="1106" y2="720"/>
+    <line x1="818" y1="790" x2="1102" y2="790"/>
+    <line x1="810" y1="860" x2="1110" y2="860"/>
+    <line x1="804" y1="930" x2="1116" y2="930"/>
+    <line x1="800" y1="1000" x2="1120" y2="1000"/>
+    <!-- Vertical joints — staggered -->
+    <line x1="840" y1="580" x2="836" y2="650"/>
+    <line x1="880" y1="580" x2="876" y2="650"/>
+    <line x1="920" y1="580" x2="916" y2="650"/>
+    <line x1="960" y1="580" x2="956" y2="650"/>
+    <line x1="1000" y1="580" x2="996" y2="650"/>
+    <line x1="1040" y1="580" x2="1036" y2="650"/>
+    <line x1="1080" y1="580" x2="1076" y2="650"/>
+    <line x1="820" y1="650" x2="816" y2="720"/>
+    <line x1="860" y1="650" x2="856" y2="720"/>
+    <line x1="900" y1="650" x2="896" y2="720"/>
+    <line x1="940" y1="650" x2="936" y2="720"/>
+    <line x1="980" y1="650" x2="976" y2="720"/>
+    <line x1="1020" y1="650" x2="1016" y2="720"/>
+    <line x1="1060" y1="650" x2="1056" y2="720"/>
+    <line x1="1095" y1="650" x2="1091" y2="720"/>
+  </g>
+
+  <!-- GAZEBO — background, center-right -->
+  <!-- Gazebo roof -->
+  <polygon points="1440,340 1600,420 1280,420" fill="#E8E3D6" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Gazebo eave octagon suggestion (side view) -->
+  <line x1="1290" y1="420" x2="1598" y2="420" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Roof peak finial -->
+  <line x1="1440" y1="300" x2="1440" y2="340" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <circle cx="1440" cy="295" r="10" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Gazebo columns -->
+  <g stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round">
+    <line x1="1300" y1="420" x2="1298" y2="570"/>
+    <line x1="1380" y1="420" x2="1378" y2="570"/>
+    <line x1="1460" y1="420" x2="1460" y2="570"/>
+    <line x1="1540" y1="420" x2="1540" y2="570"/>
+    <line x1="1590" y1="420" x2="1590" y2="570"/>
+  </g>
+  <!-- Gazebo railing -->
+  <line x1="1298" y1="490" x2="1590" y2="490" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="1298" y1="560" x2="1590" y2="560" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Railing balusters -->
+  <g stroke="#1a1a1a" stroke-width="1">
+    <line x1="1315" y1="490" x2="1315" y2="560"/>
+    <line x1="1330" y1="490" x2="1330" y2="560"/>
+    <line x1="1345" y1="490" x2="1345" y2="560"/>
+    <line x1="1360" y1="490" x2="1360" y2="560"/>
+    <line x1="1395" y1="490" x2="1395" y2="560"/>
+    <line x1="1410" y1="490" x2="1410" y2="560"/>
+    <line x1="1425" y1="490" x2="1425" y2="560"/>
+    <line x1="1440" y1="490" x2="1440" y2="560"/>
+    <line x1="1475" y1="490" x2="1475" y2="560"/>
+    <line x1="1490" y1="490" x2="1490" y2="560"/>
+    <line x1="1505" y1="490" x2="1505" y2="560"/>
+    <line x1="1520" y1="490" x2="1520" y2="560"/>
+    <line x1="1555" y1="490" x2="1555" y2="560"/>
+    <line x1="1570" y1="490" x2="1570" y2="560"/>
+    <line x1="1585" y1="490" x2="1585" y2="560"/>
+  </g>
+
+  <!-- ART DECO POST OFFICE — left frame -->
+  <!-- Building facade -->
+  <rect x="0" y="180" width="600" height="900" fill="#E8E3D4" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- Building top cornice -->
+  <rect x="0" y="180" width="600" height="40" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Stepped parapet / Art Deco top -->
+  <rect x="80" y="140" width="440" height="50" fill="#E0DBCC" stroke="#1a1a1a" stroke-width="2.5"/>
+  <rect x="140" y="100" width="320" height="50" fill="#D8D3C4" stroke="#1a1a1a" stroke-width="2.5"/>
+  <rect x="200" y="68" width="200" height="42" fill="#D0CBBC" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Art Deco geometric ornament at top center -->
+  <path d="M280,58 L300,38 L320,58" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="285" y1="52" x2="315" y2="52" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="290" y1="46" x2="310" y2="46" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Vertical fluting / pilasters -->
+  <g stroke="#1a1a1a" stroke-width="1.5" opacity="0.4">
+    <line x1="120" y1="220" x2="120" y2="600"/>
+    <line x1="135" y1="220" x2="135" y2="600"/>
+    <line x1="250" y1="220" x2="250" y2="600"/>
+    <line x1="265" y1="220" x2="265" y2="600"/>
+    <line x1="380" y1="220" x2="380" y2="600"/>
+    <line x1="395" y1="220" x2="395" y2="600"/>
+    <line x1="510" y1="220" x2="510" y2="600"/>
+    <line x1="525" y1="220" x2="525" y2="600"/>
+  </g>
+  <!-- Tall windows — three across -->
+  <g stroke="#1a1a1a" stroke-width="2.5" fill="#D8E8F0">
+    <rect x="50" y="250" width="140" height="280"/>
+    <rect x="230" y="250" width="140" height="280"/>
+    <rect x="410" y="250" width="140" height="280"/>
+    <!-- Window mullions -->
+    <line x1="120" y1="250" x2="120" y2="530"/>
+    <line x1="50" y1="390" x2="190" y2="390"/>
+    <line x1="300" y1="250" x2="300" y2="530"/>
+    <line x1="230" y1="390" x2="370" y2="390"/>
+    <line x1="480" y1="250" x2="480" y2="530"/>
+    <line x1="410" y1="390" x2="550" y2="390"/>
+  </g>
+  <!-- Entry doors at base -->
+  <rect x="185" y="500" width="230" height="360" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <line x1="300" y1="500" x2="300" y2="860" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="200" y="510" width="92" height="20" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <rect x="308" y="510" width="92" height="20" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Steps -->
+  <rect x="160" y="855" width="280" height="18" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <rect x="140" y="870" width="320" height="18" fill="#CCC7B4" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- TREES — framing the square -->
+  <!-- Tree left, near building edge -->
+  <line x1="590" y1="580" x2="590" y2="350" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Branching -->
+  <line x1="590" y1="420" x2="540" y2="370" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="590" y1="400" x2="645" y2="360" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="590" y1="380" x2="560" y2="345" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <line x1="590" y1="365" x2="618" y2="340" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <!-- Foliage canopy -->
+  <ellipse cx="590" cy="335" rx="95" ry="70" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <ellipse cx="545" cy="355" rx="65" ry="50" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <ellipse cx="635" cy="350" rx="60" ry="48" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Tree right of square -->
+  <line x1="1720" y1="580" x2="1720" y2="340" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+  <line x1="1720" y1="420" x2="1668" y2="372" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1720" y1="405" x2="1774" y2="365" stroke="#1a1a1a" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="1720" y1="385" x2="1692" y2="352" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="1720" cy="328" rx="92" ry="68" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <ellipse cx="1676" cy="348" rx="62" ry="48" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <ellipse cx="1762" cy="345" rx="58" ry="46" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- SOLDIER STATUE — on plinth, center foreground -->
+  <!-- Plinth -->
+  <rect x="880" y="480" width="160" height="100" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="3"/>
+  <!-- Plinth step -->
+  <rect x="860" y="568" width="200" height="30" fill="#C0BBB0" stroke="#1a1a1a" stroke-width="2.5"/>
+  <!-- Inscription lines on plinth (implied text) -->
+  <line x1="895" y1="510" x2="1025" y2="510" stroke="#1a1a1a" stroke-width="2"/>
+  <line x1="900" y1="528" x2="1020" y2="528" stroke="#1a1a1a" stroke-width="1.5"/>
+  <line x1="905" y1="544" x2="1015" y2="544" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- Soldier figure — upright silhouette, WWI-era with rifle -->
+  <!-- Legs -->
+  <line x1="950" y1="480" x2="948" y2="380" stroke="#1a1a1a" stroke-width="10" stroke-linecap="round"/>
+  <line x1="970" y1="480" x2="968" y2="380" stroke="#1a1a1a" stroke-width="10" stroke-linecap="round"/>
+  <!-- Body / torso -->
+  <rect x="938" y="310" width="44" height="75" rx="4" fill="#1a1a1a"/>
+  <!-- Left arm down -->
+  <line x1="940" y1="325" x2="925" y2="395" stroke="#1a1a1a" stroke-width="8" stroke-linecap="round"/>
+  <!-- Right arm holding rifle upward -->
+  <line x1="980" y1="325" x2="990" y2="260" stroke="#1a1a1a" stroke-width="7" stroke-linecap="round"/>
+  <!-- Rifle barrel extending up -->
+  <line x1="990" y1="260" x2="995" y2="205" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+  <!-- Bayonet tip -->
+  <line x1="995" y1="205" x2="998" y2="190" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Head with helmet -->
+  <ellipse cx="960" cy="295" rx="24" ry="20" fill="#1a1a1a"/>
+  <!-- Helmet brim -->
+  <path d="M935,300 Q960,308 985,300" fill="none" stroke="#1a1a1a" stroke-width="4" stroke-linecap="round"/>
+</svg>

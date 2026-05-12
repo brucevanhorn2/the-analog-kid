@@ -1,0 +1,164 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="1920" height="1080">
+  <rect width="1920" height="1080" fill="#F5F0E8"/>
+
+  <!-- Room walls -->
+  <line x1="80" y1="80" x2="1840" y2="80" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="80" x2="80" y2="860" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="1840" y1="80" x2="1840" y2="860" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <line x1="80" y1="860" x2="1840" y2="860" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- COFFERED CEILING — formal grid pattern -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="none">
+    <!-- Outer ceiling border -->
+    <rect x="100" y="100" width="1720" height="260" fill="#EDE8DC" stroke="#1a1a1a" stroke-width="2"/>
+    <!-- Coffered grid horizontal lines -->
+    <line x1="100" y1="187" x2="1820" y2="187"/>
+    <line x1="100" y1="274" x2="1820" y2="274"/>
+    <!-- Coffered grid vertical lines -->
+    <line x1="290" y1="100" x2="290" y2="360"/>
+    <line x1="480" y1="100" x2="480" y2="360"/>
+    <line x1="670" y1="100" x2="670" y2="360"/>
+    <line x1="860" y1="100" x2="860" y2="360"/>
+    <line x1="1050" y1="100" x2="1050" y2="360"/>
+    <line x1="1240" y1="100" x2="1240" y2="360"/>
+    <line x1="1430" y1="100" x2="1430" y2="360"/>
+    <line x1="1620" y1="100" x2="1620" y2="360"/>
+    <!-- Inner recessed panels (smaller rectangles) -->
+    <rect x="115" y="112" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="305" y="112" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="495" y="112" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="685" y="112" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="875" y="112" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="1065" y="112" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="1255" y="112" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="1445" y="112" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="1635" y="112" width="172" height="62" rx="2" fill="#E8E3D6"/>
+
+    <rect x="115" y="200" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="305" y="200" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="495" y="200" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="685" y="200" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="875" y="200" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="1065" y="200" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="1255" y="200" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="1445" y="200" width="160" height="62" rx="2" fill="#E8E3D6"/>
+    <rect x="1635" y="200" width="172" height="62" rx="2" fill="#E8E3D6"/>
+  </g>
+
+  <!-- HIGH WINDOWS — left wall, tall formal windows -->
+  <g stroke="#1a1a1a" stroke-width="2.5">
+    <!-- Window 1 -->
+    <rect x="100" y="360" width="140" height="400" fill="#D8E8F0" stroke="#1a1a1a" stroke-width="2.5"/>
+    <line x1="170" y1="360" x2="170" y2="760" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="100" y1="560" x2="240" y2="560" stroke="#1a1a1a" stroke-width="1.5"/>
+    <!-- Strong light diagonal from window 1 -->
+    <path d="M100,360 L400,760 L240,760 L100,560" fill="#F0EBE0" opacity="0.2"/>
+    <!-- Window 2 -->
+    <rect x="290" y="360" width="140" height="400" fill="#D8E8F0" stroke="#1a1a1a" stroke-width="2.5"/>
+    <line x1="360" y1="360" x2="360" y2="760" stroke="#1a1a1a" stroke-width="1.5"/>
+    <line x1="290" y1="560" x2="430" y2="560" stroke="#1a1a1a" stroke-width="1.5"/>
+    <path d="M290,360 L590,760 L430,760 L290,560" fill="#F0EBE0" opacity="0.18"/>
+  </g>
+
+  <!-- RIGHT WALL — official seal and flag -->
+  <!-- Official seal — circle with inner geometric detail -->
+  <circle cx="1650" cy="550" r="130" fill="#EDE8DC" stroke="#1a1a1a" stroke-width="3"/>
+  <circle cx="1650" cy="550" r="110" fill="none" stroke="#1a1a1a" stroke-width="2"/>
+  <circle cx="1650" cy="550" r="80" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+  <!-- Inner seal design — sunburst / spoke pattern -->
+  <g stroke="#1a1a1a" stroke-width="1.5" opacity="0.7">
+    <line x1="1650" y1="475" x2="1650" y2="440"/>
+    <line x1="1705" y1="493" x2="1732" y2="466"/>
+    <line x1="1723" y1="550" x2="1758" y2="550"/>
+    <line x1="1705" y1="607" x2="1732" y2="634"/>
+    <line x1="1650" y1="625" x2="1650" y2="660"/>
+    <line x1="1595" y1="607" x2="1568" y2="634"/>
+    <line x1="1577" y1="550" x2="1542" y2="550"/>
+    <line x1="1595" y1="493" x2="1568" y2="466"/>
+  </g>
+  <!-- Inner circle text implied with fine lines -->
+  <path d="M1560,550 A90,90 0 1,1 1740,550" fill="none" stroke="#1a1a1a" stroke-width="1" opacity="0.4" stroke-dasharray="4,3"/>
+  <!-- Eagle/star shape at center -->
+  <polygon points="1650,505 1660,535 1695,535 1668,553 1678,583 1650,565 1622,583 1632,553 1605,535 1640,535" fill="none" stroke="#1a1a1a" stroke-width="1.5"/>
+
+  <!-- American Flag — corner, right side -->
+  <!-- Pole -->
+  <line x1="1820" y1="100" x2="1820" y2="700" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+  <!-- Flag rectangle -->
+  <rect x="1680" y="105" width="140" height="90" fill="#F5F0E8" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Flag stripes — simplified -->
+  <g fill="#C8C3B0" opacity="0.5">
+    <rect x="1680" y="105" width="140" height="7"/>
+    <rect x="1680" y="119" width="140" height="7"/>
+    <rect x="1680" y="133" width="140" height="7"/>
+    <rect x="1680" y="147" width="140" height="7"/>
+    <rect x="1680" y="161" width="140" height="7"/>
+    <rect x="1680" y="175" width="140" height="7"/>
+    <rect x="1680" y="189" width="140" height="7"/>
+  </g>
+  <!-- Canton (blue corner) -->
+  <rect x="1680" y="105" width="60" height="45" fill="#3A5080" stroke="none" opacity="0.7"/>
+
+  <!-- LONG TABLE — centered -->
+  <!-- Table top surface -->
+  <rect x="300" y="600" width="1260" height="260" fill="#D0CCBC" stroke="#1a1a1a" stroke-width="3" rx="6"/>
+  <!-- Table edge -->
+  <line x1="300" y1="600" x2="1560" y2="600" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+  <!-- Table surface grain lines -->
+  <g stroke="#1a1a1a" stroke-width="1" opacity="0.15">
+    <line x1="300" y1="640" x2="1560" y2="640"/>
+    <line x1="300" y1="680" x2="1560" y2="680"/>
+    <line x1="300" y1="720" x2="1560" y2="720"/>
+    <line x1="300" y1="760" x2="1560" y2="760"/>
+    <line x1="300" y1="800" x2="1560" y2="800"/>
+  </g>
+
+  <!-- CHAIRS around table — shown as rounded rectangles, backs visible -->
+  <!-- Chairs on near (south) side — backs facing viewer -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="#C4C0B0">
+    <!-- Chair backs (arched top visible) -->
+    <path d="M350,860 Q350,830 380,830 L460,830 Q490,830 490,860" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="350" y1="860" x2="490" y2="860" stroke="#1a1a1a" stroke-width="2"/>
+    <path d="M540,860 Q540,830 570,830 L650,830 Q680,830 680,860" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="540" y1="860" x2="680" y2="860" stroke="#1a1a1a" stroke-width="2"/>
+    <path d="M730,860 Q730,830 760,830 L840,830 Q870,830 870,860" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="730" y1="860" x2="870" y2="860" stroke="#1a1a1a" stroke-width="2"/>
+    <path d="M920,860 Q920,830 950,830 L1030,830 Q1060,830 1060,860" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="920" y1="860" x2="1060" y2="860" stroke="#1a1a1a" stroke-width="2"/>
+    <path d="M1110,860 Q1110,830 1140,830 L1220,830 Q1250,830 1250,860" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="1110" y1="860" x2="1250" y2="860" stroke="#1a1a1a" stroke-width="2"/>
+    <path d="M1300,860 Q1300,830 1330,830 L1410,830 Q1440,830 1440,860" fill="#C8C4B4" stroke="#1a1a1a" stroke-width="2"/>
+    <line x1="1300" y1="860" x2="1440" y2="860" stroke="#1a1a1a" stroke-width="2"/>
+  </g>
+
+  <!-- Chairs on far side (behind table, seen as tops/backs) -->
+  <g stroke="#1a1a1a" stroke-width="2" fill="#BEB9A8">
+    <rect x="355" y="560" width="130" height="38" rx="8" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="545" y="560" width="130" height="38" rx="8" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="735" y="560" width="130" height="38" rx="8" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="925" y="560" width="130" height="38" rx="8" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="1115" y="560" width="130" height="38" rx="8" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="1.5"/>
+    <rect x="1305" y="560" width="130" height="38" rx="8" fill="#C4C0B0" stroke="#1a1a1a" stroke-width="1.5"/>
+  </g>
+
+  <!-- PODIUM — one end of table -->
+  <rect x="1480" y="520" width="160" height="340" fill="#C8C3B0" stroke="#1a1a1a" stroke-width="2.5" rx="3"/>
+  <!-- Podium top angled surface -->
+  <path d="M1478,520 Q1560,500 1642,520 L1640,560 Q1560,545 1480,560 Z" fill="#D4CFC0" stroke="#1a1a1a" stroke-width="2"/>
+  <!-- Microphone on podium -->
+  <line x1="1560" y1="505" x2="1560" y2="470" stroke="#1a1a1a" stroke-width="2" stroke-linecap="round"/>
+  <ellipse cx="1560" cy="462" rx="12" ry="16" fill="#C0BCAC" stroke="#1a1a1a" stroke-width="2"/>
+
+  <!-- Water carafes on table -->
+  <g stroke="#1a1a1a" stroke-width="1.5" fill="#D8E8F0">
+    <ellipse cx="580" cy="602" rx="16" ry="8"/>
+    <rect x="564" y="555" width="32" height="48" rx="3"/>
+    <ellipse cx="580" cy="555" rx="16" ry="6"/>
+    <ellipse cx="960" cy="602" rx="16" ry="8"/>
+    <rect x="944" y="555" width="32" height="48" rx="3"/>
+    <ellipse cx="960" cy="555" rx="16" ry="6"/>
+    <ellipse cx="1340" cy="602" rx="16" ry="8"/>
+    <rect x="1324" y="555" width="32" height="48" rx="3"/>
+    <ellipse cx="1340" cy="555" rx="16" ry="6"/>
+  </g>
+</svg>
