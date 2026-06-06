@@ -81,9 +81,19 @@ init python:
     ## 1967 decision routing (self-contained nudge scenes).
     PROCEED_LABELS_1967 = {
         "samuel": "samuel_1967_nudge",
+        "carver": "carver_1967_nudge",
+        "geri":   "geri_1967_nudge",
+        "ray":    "ray_1967_nudge",
+        "frank":  "frank_1967_nudge",
+        "june":   "june_1967_nudge",
     }
     PROCEED_CAPTION_1967 = {
         "samuel": "▸  Decide what to do about Darnell",
+        "carver": "▸  The march is Monday — decide",
+        "geri":   "▸  Deliver the report",
+        "ray":    "▸  Decide what to do with the list",
+        "frank":  "▸  The list is on the desk — decide",
+        "june":   "▸  Thursday's vote",
     }
 
     def proceed_label():
@@ -203,7 +213,10 @@ label location_ihs_clinic:
         else:
             jump location_ihs_clinic_1955_samuel
     elif current_period == 1967:
-        jump location_ihs_clinic_1967
+        if player_char == "ray":
+            jump location_ihs_clinic_1967_ray
+        else:
+            jump location_ihs_clinic_1967_samuel
     else:
         "The IHS clinic."
         return
@@ -223,6 +236,11 @@ label location_tracks_crossing:
 label location_mount_zion:
     if current_period == 1955:
         jump location_mount_zion_1955
+    elif current_period == 1967:
+        if player_char == "ray":
+            jump location_mount_zion_1967_ray
+        else:
+            jump location_mount_zion_1967_carver
     else:
         "Mt. Zion Baptist Church."
         return
@@ -230,6 +248,8 @@ label location_mount_zion:
 label location_earls_diner:
     if current_period == 1955:
         jump location_earls_diner_1955
+    elif current_period == 1967:
+        jump location_earls_diner_1967
     else:
         "Earl's Diner."
         return
@@ -240,6 +260,8 @@ label location_south_side_entry:
             jump location_south_side_street_1955
         else:
             jump location_south_side_entry_1955
+    elif current_period == 1967:
+        jump location_south_side_street_1967
     else:
         "The south side."
         return
@@ -247,6 +269,8 @@ label location_south_side_entry:
 label location_first_baptist:
     if current_period == 1955:
         jump location_first_baptist_1955
+    elif current_period == 1967:
+        jump location_first_baptist_1967
     else:
         "First Baptist Church."
         return
@@ -254,6 +278,8 @@ label location_first_baptist:
 label location_barbershop:
     if current_period == 1955:
         jump location_barbershop_1955
+    elif current_period == 1967:
+        jump location_barbershop_1967
     else:
         "The barbershop."
         return
@@ -261,6 +287,8 @@ label location_barbershop:
 label location_geri_office:
     if current_period == 1955:
         jump location_geri_office_1955
+    elif current_period == 1967:
+        jump location_geri_office_1967
     else:
         "The science hall office."
         return
@@ -269,7 +297,12 @@ label location_frank_office:
     if current_period == 1955:
         jump location_frank_office_1955
     elif current_period == 1967:
-        jump location_frank_office_1967
+        if player_char == "samuel":
+            jump location_frank_office_1967_samuel
+        elif player_char == "ray":
+            jump location_frank_office_1967_ray
+        else:
+            jump location_frank_office_1967_frank
     else:
         "The police station."
         return
@@ -287,6 +320,11 @@ label location_town_square:
 label location_city_hall:
     if current_period == 1955:
         jump location_city_hall_1955
+    elif current_period == 1967:
+        if player_char == "june":
+            jump location_city_hall_1967_june
+        else:
+            jump location_city_hall_1967_carver
     else:
         "City Hall."
         return
@@ -306,6 +344,8 @@ label location_bus_station:
 label location_tribal_office:
     if current_period == 1955:
         jump location_tribal_office_1955
+    elif current_period == 1967:
+        jump location_tribal_office_1967
     else:
         "The tribal community office."
         return
@@ -321,6 +361,8 @@ label location_college_campus:
 label location_library:
     if current_period == 1955:
         jump location_library_1955
+    elif current_period == 1967:
+        jump location_library_1967
     else:
         "The public library."
         return
@@ -328,6 +370,8 @@ label location_library:
 label location_vfw_hall:
     if current_period == 1955:
         jump location_vfw_hall_1955
+    elif current_period == 1967:
+        jump location_vfw_hall_1967
     else:
         "The VFW Hall."
         return
@@ -335,6 +379,8 @@ label location_vfw_hall:
 label location_holloway_derrick:
     if current_period == 1955:
         jump location_holloway_derrick_1955
+    elif current_period == 1967:
+        jump location_holloway_derrick_1967
     else:
         "The Holloway oil derrick."
         return

@@ -26,8 +26,9 @@ COMFY = os.environ.get("COMFY_HOST", "http://127.0.0.1:8000")
 CKPT = os.environ.get("COMFY_CKPT", "juggernautXL_ragnarokBy.safetensors")
 
 # Shared look so every location reads as one cohesive set.
+ERA = os.environ.get("COMFY_ERA", "1955 small-town America")
 STYLE = (
-    "photorealistic cinematic film still, 1955 small-town America, "
+    "photorealistic cinematic film still, " + ERA + ", "
     "warm natural lighting, 35mm Kodachrome color, soft atmospheric haze, "
     "highly detailed, wide shot, "
     "no people, empty scene, period accurate"

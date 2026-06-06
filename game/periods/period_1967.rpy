@@ -12,6 +12,16 @@ label period_1967_begin:
     ## Authored 1967 threads route here; the rest fall through to the stub.
     if player_char == "samuel":
         jump samuel_1967_begin
+    elif player_char == "carver":
+        jump carver_1967_begin
+    elif player_char == "geri":
+        jump geri_1967_begin
+    elif player_char == "ray":
+        jump ray_1967_begin
+    elif player_char == "frank":
+        jump frank_1967_begin
+    elif player_char == "june":
+        jump june_1967_begin
 
     scene black with fade
     pause 0.5

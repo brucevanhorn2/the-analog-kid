@@ -13,7 +13,7 @@ label samuel_1967_begin:
     $ mark_visited("beaumont_practice")
     $ marcus_status = "drafted"
 
-    scene bg_beaumont_practice_1955 with fade
+    scene bg_beaumont_practice_1967 with fade
     # play music "audio/music/1967_morning.ogg" fadein 2.0
 
     thought "Forty-eight years old."
@@ -99,7 +99,7 @@ label samuel_1967_explore:
 label location_beaumont_practice_1967:
 
     $ mark_visited("beaumont_practice")
-    scene bg_beaumont_practice_1955 with dissolve
+    scene bg_beaumont_practice_1967 with dissolve
 
     "The office. The good lamp. The pocket Bible on the corner of the desk."
 
@@ -118,7 +118,7 @@ label location_beaumont_practice_1967:
 label location_hospital_north_1967:
 
     $ mark_visited("hospital_north")
-    scene bg_hospital_north_1955 with dissolve
+    scene bg_hospital_north_1967 with dissolve
 
     "Middletown General. Samuel has a staff badge now. It opens most of the doors."
     "Not all of them. The surgical suite still requires an escort he is never quite offered."
@@ -140,10 +140,10 @@ label location_hospital_north_1967:
 # LOCATION: IHS CLINIC (1967) — Ray
 # ---------------------------------------------------------------------------
 
-label location_ihs_clinic_1967:
+label location_ihs_clinic_1967_samuel:
 
     $ mark_visited("ihs_clinic")
-    scene bg_ihs_clinic_1955 with dissolve
+    scene bg_ihs_clinic_1967 with dissolve
 
     "The IHS clinic. George Runningwater retired in '64. The fluorescent tube still hums."
     "Ray Coldwater is at the folding table by the window with his case files, the way he has been on Tuesdays for fourteen years."
@@ -186,10 +186,10 @@ label location_ihs_clinic_1967:
 # LOCATION: POLICE STATION (1967) — Frank and the Darnell file
 # ---------------------------------------------------------------------------
 
-label location_frank_office_1967:
+label location_frank_office_1967_samuel:
 
     $ mark_visited("frank_office")
-    scene bg_frank_office_1955 with dissolve
+    scene bg_frank_office_1967 with dissolve
 
     "The detective's office. The mustard linoleum. Frank DeLuca is fifty-two and has the particular stillness of a man who has stopped expecting the law to surprise him pleasantly."
 
@@ -238,7 +238,7 @@ label location_frank_office_1967:
 label location_tracks_crossing_1967:
 
     $ mark_visited("tracks_crossing")
-    scene bg_tracks_crossing_1955 with dissolve
+    scene bg_tracks_crossing_1967 with dissolve
 
     "The crossing. The signal post has a civil rights poster on it. Torn at one corner. Taped. Torn again."
     "Marcus does not work the signal anymore. He is twenty-two and waiting on a bus to a war."
@@ -255,7 +255,7 @@ label location_tracks_crossing_1967:
 
 label samuel_1967_nudge:
 
-    scene bg_beaumont_practice_1955 with dissolve
+    scene bg_beaumont_practice_1967 with dissolve
 
     "Evening. The chart is on the desk. Tuesday. A hundred and one degrees."
 
@@ -345,7 +345,7 @@ label samuel_nudge_progressive_1967:
 
 label samuel_1967_nudge_after:
 
-    scene bg_beaumont_practice_1955 with dissolve
+    scene bg_beaumont_practice_1967 with dissolve
 
     "Late. The office is dark except for the good lamp."
     "Samuel sets the pocket Bible in his coat. It still fits exactly where it has always fit."
@@ -358,7 +358,7 @@ label samuel_1967_nudge_after:
 
 label samuel_1967_period_end:
 
-    scene bg_beaumont_practice_1955 with dissolve
+    scene bg_beaumont_practice_1967 with dissolve
     # stop music fadeout 2.0
 
     "Evening. The waiting room is empty. The nurse left hours ago."
