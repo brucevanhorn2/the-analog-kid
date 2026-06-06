@@ -364,7 +364,7 @@ label location_tracks_crossing_1955:
     $ mark_talked("marcus", "tracks_crossing", "whitehorse")
     $ ray_samuel_connection = True
 
-    thought "Ray Holloway stopped at the crossing last Tuesday. Marcus told me."
+    thought "Ray Coldwater stopped at the crossing last Tuesday. Marcus told me."
     thought "Ray has been going to the IHS clinic with case files. He's been doing this for three years."
     thought "We've been working in parallel without ever formally acknowledging it."
 
@@ -452,13 +452,13 @@ label samuel_1955_nudge:
     if ray_samuel_connection and not talked("ray", "ihs_clinic", "present"):
         $ mark_talked("ray", "ihs_clinic", "present")
         "The back door opens. A man comes in with a folder of papers."
-        "Ray Holloway. Korean War vet. Runs the hardware store on Main Street."
+        "Ray Coldwater. County social worker, south side."
         "He comes to the IHS clinic on Tuesdays to review welfare case files."
         "He stops when he sees Samuel."
 
         ray "Dr. Beaumont."
 
-        samuel "Mr. Holloway."
+        samuel "Mr. Coldwater."
 
         "They have seen each other at this clinic on four separate occasions."
         "They have never formally introduced themselves because they have both understood for some time that they are already acquainted."

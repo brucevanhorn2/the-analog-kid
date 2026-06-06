@@ -25,7 +25,7 @@ label carver_1955_begin:
     "They are pine pews. They were donated by Harold Blanton Sr. in 1947."
     "Carver has been the pastor here for six years. He is aware of the difference between what the pews mean and who paid for them."
 
-    thought "Fifty-one years old. Korean vet. Former sergeant, 1st Cavalry, Pacific before that."
+    thought "Thirty-eight years old. Korean vet. Former sergeant, 1st Cavalry, Pacific before that."
     thought "I came home from one war and walked into another one about the color of the new carpet."
     thought "The carpet stayed beige."
 

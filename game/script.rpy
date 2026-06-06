@@ -24,15 +24,15 @@ label character_select:
     narrator "Whose story is this?"
 
     menu:
-        "Rev. James Carver — Pastor, Mt. Zion Baptist Church":
+        "Rev. Thomas Carver — Pastor, First Baptist Church":
             $ player_char = "carver"
-        "Geraldine Habicht — Blanton Plant Supervisor":
+        "Dr. Geraldine Habicht — Professor, Statistics":
             $ player_char = "geri"
-        "Ray Holloway — Army Veteran, Hardware Store Owner":
+        "Raymond Coldwater — Social Worker, South Side":
             $ player_char = "ray"
         "Frank DeLuca — Detective, Middletown Police Department":
             $ player_char = "frank"
-        "June Holloway — Schoolteacher, Central Elementary":
+        "June Holloway — City Council, North Side":
             $ player_char = "june"
         "Dr. Samuel Beaumont — Physician, South Side":
             $ player_char = "samuel"
