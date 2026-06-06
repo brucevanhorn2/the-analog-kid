@@ -54,6 +54,18 @@ label period_1967_begin:
 
 label period_1979_begin:
     $ current_period = 1979
+    if player_char == "samuel":
+        jump samuel_1979_begin
+    elif player_char == "carver":
+        jump carver_1979_begin
+    elif player_char == "geri":
+        jump geri_1979_begin
+    elif player_char == "ray":
+        jump ray_1979_begin
+    elif player_char == "frank":
+        jump frank_1979_begin
+    elif player_char == "june":
+        jump june_1979_begin
     jump preview_end
 
 label period_1991_begin:

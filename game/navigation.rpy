@@ -96,15 +96,35 @@ init python:
         "june":   "▸  Thursday's vote",
     }
 
+    PROCEED_LABELS_1979 = {
+        "samuel": "samuel_1979_nudge",
+        "carver": "carver_1979_nudge",
+        "geri":   "geri_1979_nudge",
+        "ray":    "ray_1979_nudge",
+        "frank":  "frank_1979_nudge",
+        "june":   "june_1979_nudge",
+    }
+    PROCEED_CAPTION_1979 = {
+        "samuel": "▸  Decide how the file enters the world",
+        "carver": "▸  Harold is waiting in the study",
+        "geri":   "▸  Answer Frank's question",
+        "ray":    "▸  Decide about George's warning",
+        "frank":  "▸  Resolve the Blanton case",
+        "june":   "▸  Thursday's budget vote",
+    }
+
+    _PROCEED_BY_PERIOD = {
+        1967: (PROCEED_LABELS_1967, PROCEED_CAPTION_1967),
+        1979: (PROCEED_LABELS_1979, PROCEED_CAPTION_1979),
+    }
+
     def proceed_label():
-        if store.current_period == 1967:
-            return PROCEED_LABELS_1967.get(store.player_char)
-        return PROCEED_LABELS.get(store.player_char)
+        labels = _PROCEED_BY_PERIOD.get(store.current_period, (PROCEED_LABELS, None))[0]
+        return labels.get(store.player_char)
 
     def proceed_caption():
-        if store.current_period == 1967:
-            return PROCEED_CAPTION_1967.get(store.player_char, "▸  Continue")
-        return PROCEED_CAPTION.get(store.player_char, "▸  Continue")
+        caps = _PROCEED_BY_PERIOD.get(store.current_period, (None, PROCEED_CAPTION))[1]
+        return caps.get(store.player_char, "▸  Continue")
 
     def get_exits(location):
         return NAV_GRAPH.get(location, [])
@@ -200,6 +220,8 @@ label location_hospital_north:
         jump location_hospital_north_1955
     elif current_period == 1967:
         jump location_hospital_north_1967
+    elif current_period == 1979:
+        jump location_hospital_north_1979
     else:
         "The north side hospital."
         return
@@ -217,6 +239,11 @@ label location_ihs_clinic:
             jump location_ihs_clinic_1967_ray
         else:
             jump location_ihs_clinic_1967_samuel
+    elif current_period == 1979:
+        if player_char == "ray":
+            jump location_ihs_clinic_1979_ray
+        else:
+            jump location_ihs_clinic_1979_samuel
     else:
         "The IHS clinic."
         return
@@ -241,6 +268,8 @@ label location_mount_zion:
             jump location_mount_zion_1967_ray
         else:
             jump location_mount_zion_1967_carver
+    elif current_period == 1979:
+        jump location_mount_zion_1979
     else:
         "Mt. Zion Baptist Church."
         return
@@ -250,6 +279,8 @@ label location_earls_diner:
         jump location_earls_diner_1955
     elif current_period == 1967:
         jump location_earls_diner_1967
+    elif current_period == 1979:
+        jump location_earls_diner_1979
     else:
         "Earl's Diner."
         return
@@ -271,6 +302,8 @@ label location_first_baptist:
         jump location_first_baptist_1955
     elif current_period == 1967:
         jump location_first_baptist_1967
+    elif current_period == 1979:
+        jump location_first_baptist_1979
     else:
         "First Baptist Church."
         return
@@ -280,6 +313,8 @@ label location_barbershop:
         jump location_barbershop_1955
     elif current_period == 1967:
         jump location_barbershop_1967
+    elif current_period == 1979:
+        jump location_barbershop_1979
     else:
         "The barbershop."
         return
@@ -289,6 +324,8 @@ label location_geri_office:
         jump location_geri_office_1955
     elif current_period == 1967:
         jump location_geri_office_1967
+    elif current_period == 1979:
+        jump location_geri_office_1979
     else:
         "The science hall office."
         return
@@ -303,6 +340,13 @@ label location_frank_office:
             jump location_frank_office_1967_ray
         else:
             jump location_frank_office_1967_frank
+    elif current_period == 1979:
+        if player_char == "samuel":
+            jump location_frank_office_1979_samuel
+        elif player_char == "ray":
+            jump location_frank_office_1979_ray
+        else:
+            jump location_frank_office_1979_frank
     else:
         "The police station."
         return
@@ -325,6 +369,8 @@ label location_city_hall:
             jump location_city_hall_1967_june
         else:
             jump location_city_hall_1967_carver
+    elif current_period == 1979:
+        jump location_city_hall_1979
     else:
         "City Hall."
         return
@@ -346,13 +392,21 @@ label location_tribal_office:
         jump location_tribal_office_1955
     elif current_period == 1967:
         jump location_tribal_office_1967
+    elif current_period == 1979:
+        jump location_tribal_office_1979
     else:
         "The tribal community office."
         return
 
 label location_blanton_factory:
-    "Blanton Manufacturing. The smokestacks are running."
-    return
+    if current_period == 1979:
+        if player_char == "ray":
+            jump location_blanton_factory_1979_ray
+        else:
+            jump location_blanton_factory_1979_frank
+    else:
+        "Blanton Manufacturing. The smokestacks are running."
+        return
 
 label location_college_campus:
     "Middletown College. The quad, the admin building, the science hall."
@@ -381,6 +435,8 @@ label location_holloway_derrick:
         jump location_holloway_derrick_1955
     elif current_period == 1967:
         jump location_holloway_derrick_1967
+    elif current_period == 1979:
+        jump location_holloway_derrick_1979
     else:
         "The Holloway oil derrick."
         return
