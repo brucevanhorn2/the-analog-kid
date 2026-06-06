@@ -18,24 +18,10 @@ label character_select:
 
     scene black with dissolve
 
-    ## "Whose eyes are you seeing this through?"
-    ## Framed as perspective, not as character creation.
-    ## No mention of simulation, AI, or Atanasoff.
-    narrator "Whose story is this?"
-
-    menu:
-        "Rev. Thomas Carver — Pastor, First Baptist Church":
-            $ player_char = "carver"
-        "Dr. Geraldine Habicht — Professor, Statistics":
-            $ player_char = "geri"
-        "Raymond Coldwater — Social Worker, South Side":
-            $ player_char = "ray"
-        "Frank DeLuca — Detective, Middletown Police Department":
-            $ player_char = "frank"
-        "June Holloway — City Council, North Side":
-            $ player_char = "june"
-        "Dr. Samuel Beaumont — Physician, South Side":
-            $ player_char = "samuel"
+    ## Illustrated portrait roster (see character_select.rpy). Framed as
+    ## perspective, not character creation — no mention of the AI yet.
+    call screen character_select_screen
+    $ player_char = _return
 
     jump period_1955_begin
 

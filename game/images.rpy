@@ -30,9 +30,8 @@ image bg_holloway_derrick_1955  = "images/locations/1955/holloway_derrick_1955.p
 image bg_barbershop_1955        = "images/locations/1955/barbershop_1955.png"
 image bg_waiting_room_1955      = "images/locations/1955/1955-waiting-room-00.png"
 
-## Solid placeholders (no SVG yet)
-image bg_library_1955           = Solid("#0d1420")
-image bg_south_side_street_1955 = Solid("#0d140d")
+image bg_library_1955           = "images/locations/1955/library_1955.png"
+image bg_south_side_street_1955 = "images/locations/1955/south_side_street_1955.png"
 
 ## Add more periods here as images are generated:
 ## image bg_main_street_1967 = "images/locations/1967/main_street.png"

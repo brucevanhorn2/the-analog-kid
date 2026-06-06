@@ -1,0 +1,45 @@
+[
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/holloway_derrick_1955.png",
+   "prompt": "exterior of a working oil derrick and pump jack on the prairie outside town, dusty access road, prosperous 1955 oilfield, late afternoon golden hour sun, distant fields",
+   "seed": 2001},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/town_square_1955.png",
+   "prompt": "exterior of a small American town square, domed limestone city hall with a clock tower, green lawn, war memorial statue, gazebo, mature trees, late afternoon golden hour",
+   "seed": 2002},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/south_side_street_1955.png",
+   "prompt": "exterior of a modest south-side residential street, small well-kept wooden houses, narrow road, picket fences, railroad tracks visible in the distance, warm overcast afternoon",
+   "seed": 2003},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/barbershop_1955.png",
+   "prompt": "interior of a 1955 north-side barbershop, single barber chair, wall of mirrors, waiting bench, oscillating fan, bottles of hair tonic, warm tungsten light through the front window",
+   "seed": 2004},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/city_hall_1955.png",
+   "prompt": "interior of a 1955 town council chamber, long wooden table with chairs, official seal on the wall, tall windows, dark wood paneling, soft daylight",
+   "seed": 2005},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/earls_diner_1955.png",
+   "prompt": "interior of a 1955 American diner, chrome counter with red vinyl stools, booths by the window, pie case, coffee urn, checkerboard floor, warm morning light",
+   "seed": 2006},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/frank_office_1955.png",
+   "prompt": "interior of a 1955 police detective office, gray metal desk, bulletin board with case notes, mustard linoleum floor, venetian blinds, filing cabinet, overhead fluorescent light",
+   "seed": 2007},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/geri_office_1955.png",
+   "prompt": "interior of a 1955 college statistics professor office, cluttered drafting table covered in ledger paper, three file cabinets, south-facing window showing railroad tracks, ashtray, chalkboard, afternoon light",
+   "seed": 2008},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/tribal_office_1955.png",
+   "prompt": "interior of a 1955 tribal community welfare office in a converted storefront, gray metal desk against the wall, government poster, metal folding chairs, filing cabinet, plain daylight",
+   "seed": 2009},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/vfw_hall_1955.png",
+   "prompt": "interior of a 1955 VFW veterans hall, long bar along one wall, dark wood paneling, jukebox in the corner, card tables, dim warm evening light, American flag",
+   "seed": 2010},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/locations/1955/library_1955.png",
+   "prompt": "interior of a 1955 small college library, tall wooden bookshelves, card catalog cabinet, reading tables with green banker lamps, tall windows, quiet soft daylight",
+   "seed": 2011}
+]

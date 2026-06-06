@@ -61,7 +61,7 @@ label ray_1955_explore:
     "The Simmons file is on the desk."
     "It is Tuesday. The IHS clinic is open."
 
-    return
+    jump explore_1955
 
 
 # ---------------------------------------------------------------------------
@@ -125,7 +125,7 @@ label location_south_side_street_1955:
 # LOCATION: TRACKS CROSSING (1955) — Ray's version
 # ---------------------------------------------------------------------------
 
-label location_tracks_crossing_1955:
+label location_tracks_crossing_1955_ray:
 
     $ mark_visited("tracks_crossing")
     $ current_location = "tracks_crossing"
@@ -182,7 +182,7 @@ label location_tracks_crossing_1955:
 # LOCATION: IHS CLINIC (1955) — Ray's version
 # ---------------------------------------------------------------------------
 
-label location_ihs_clinic_1955:
+label location_ihs_clinic_1955_ray:
 
     $ mark_visited("ihs_clinic")
     $ current_location = "ihs_clinic"

@@ -1,17 +1,24 @@
 ## The Analog Kid — Navigation System
+##
+## Room-based, Myst-style exploration. The player roams freely between
+## connected locations (the hub loop, `explore_1955`) until they choose to
+## proceed to their character's decision for the period.
 
 init python:
     NAV_GRAPH = {
         "hospital_north":    ["first_baptist", "main_street"],
         "first_baptist":     ["hospital_north", "main_street"],
         "barbershop":        ["main_street"],
+        "frank_office":      ["main_street"],
         "main_street":       ["hospital_north", "first_baptist", "earls_diner",
                               "mcswain_block", "town_square", "college_campus",
-                              "library", "vfw_hall", "barbershop", "tracks_crossing"],
+                              "library", "vfw_hall", "barbershop", "tracks_crossing",
+                              "frank_office", "holloway_derrick", "high_school_road"],
         "earls_diner":       ["main_street"],
         "mcswain_block":     ["main_street"],
-        "college_campus":    ["main_street", "library"],
-        "library":           ["main_street", "college_campus"],
+        "college_campus":    ["main_street", "library", "geri_office"],
+        "geri_office":       ["college_campus", "library"],
+        "library":           ["main_street", "college_campus", "geri_office"],
         "vfw_hall":          ["main_street"],
         "town_square":       ["main_street", "city_hall", "post_office"],
         "city_hall":         ["town_square"],
@@ -31,8 +38,51 @@ init python:
         "high_school_road":  ["main_street"],
     }
 
+    ## Nicer button captions than a naive title-case of the key.
+    LOCATION_DISPLAY_NAMES = {
+        "ihs_clinic":        "IHS Clinic",
+        "mcswain_block":     "McSwain Block",
+        "vfw_hall":          "VFW Hall",
+        "geri_office":       "Science Hall",
+        "frank_office":      "Police Station",
+        "beaumont_practice": "Beaumont's Practice",
+        "tribal_office":     "Tribal Office",
+        "holloway_derrick":  "Holloway Derrick",
+        "high_school_road":  "High School Road",
+        "south_side_entry":  "South Side",
+        "tracks_crossing":   "Railroad Crossing",
+        "hospital_north":    "North Hospital",
+        "first_baptist":     "First Baptist",
+        "mount_zion":        "Mount Zion",
+        "earls_diner":       "Earl's Diner",
+    }
+
+    ## Where the "proceed with your day" affordance sends each protagonist.
+    ## Samuel/Ray flow into their nudge through the clinic scene that sets it up.
+    ## The others have self-contained nudge scenes.
+    PROCEED_LABELS = {
+        "samuel": "location_ihs_clinic_1955_samuel",
+        "ray":    "location_ihs_clinic_1955_ray",
+        "carver": "carver_1955_nudge",
+        "geri":   "geri_1955_nudge",
+        "frank":  "frank_1955_nudge",
+        "june":   "june_1955_nudge",
+    }
+
+    PROCEED_CAPTION = {
+        "samuel": "▸  Walk to the IHS clinic",
+        "ray":    "▸  Walk to the IHS clinic",
+        "carver": "▸  It's nearly time for the board meeting",
+        "geri":   "▸  The afternoon meeting is coming",
+        "frank":  "▸  Back to the office to decide",
+        "june":   "▸  To the council chamber",
+    }
+
     def get_exits(location):
         return NAV_GRAPH.get(location, [])
+
+    def location_label(loc):
+        return LOCATION_DISPLAY_NAMES.get(loc, loc.replace("_", " ").title())
 
     def can_visit(location):
         if location == "high_school_road":
@@ -40,31 +90,66 @@ init python:
         return True
 
 
-screen nav_bar():
+## The navigation panel. Shown by the hub loop via `call screen`; each button
+## returns the chosen destination (or the "__proceed__" sentinel).
+screen nav_bar(loc):
+
     frame:
+        style "nav_frame"
         xalign 0.5
         yalign 1.0
-        yoffset -20
-        hbox:
-            spacing 16
-            for dest in get_exits(store.current_location):
-                if can_visit(dest):
-                    textbutton dest.replace("_", " ").title():
-                        action [
-                            Function(mark_visited, dest),
-                            SetVariable("current_location", dest),
-                            Jump("location_" + dest)
-                        ]
+        yoffset -16
+
+        vbox:
+            spacing 10
+            xalign 0.5
+
+            text "Where would you like to go?":
+                xalign 0.5
+                size 22
+
+            hbox:
+                spacing 12
+                xalign 0.5
+                box_wrap True
+                for dest in get_exits(loc):
+                    if can_visit(dest):
+                        textbutton location_label(dest):
+                            action Return(dest)
+
+            if player_char in PROCEED_LABELS:
+                textbutton PROCEED_CAPTION.get(player_char, "▸  Continue"):
+                    xalign 0.5
+                    action Return("__proceed__")
 
 
+style nav_frame is frame:
+    background "#0a0a0acc"
+    padding (24, 16)
+
+
+## Kept as a no-op so the many existing `call show_nav_bar` lines in the
+## period scripts remain valid. Roaming is now driven by `explore_1955`.
 label show_nav_bar:
-    show screen nav_bar
     return
 
 
-## Dispatch labels — route to the right period version.
-## Each period file defines location_X_PERIOD labels.
-## Locations not yet written for a period show a placeholder.
+## The roam loop. Free exploration until the player chooses to proceed (or
+## visits a location whose scene jumps straight into the decision).
+label explore_1955:
+    while True:
+        call screen nav_bar(current_location)
+        if _return == "__proceed__":
+            jump expression PROCEED_LABELS[player_char]
+        $ current_location = _return
+        $ mark_visited(_return)
+        call expression "location_" + _return
+
+
+## ---------------------------------------------------------------------------
+## Dispatch labels — route a location to the right period/character version.
+## Locations not yet authored for a period show a short placeholder.
+## ---------------------------------------------------------------------------
 
 label location_main_street:
     if current_period == 1955:
@@ -89,14 +174,22 @@ label location_hospital_north:
 
 label location_ihs_clinic:
     if current_period == 1955:
-        jump location_ihs_clinic_1955
+        if player_char == "ray":
+            jump location_ihs_clinic_1955_ray
+        elif player_char == "june":
+            jump location_ihs_clinic_1955_june
+        else:
+            jump location_ihs_clinic_1955_samuel
     else:
         "The IHS clinic."
         return
 
 label location_tracks_crossing:
     if current_period == 1955:
-        jump location_tracks_crossing_1955
+        if player_char == "ray":
+            jump location_tracks_crossing_1955_ray
+        else:
+            jump location_tracks_crossing_1955_samuel
     else:
         "The tracks crossing."
         return
@@ -117,7 +210,10 @@ label location_earls_diner:
 
 label location_south_side_entry:
     if current_period == 1955:
-        jump location_south_side_entry_1955
+        if player_char == "ray":
+            jump location_south_side_street_1955
+        else:
+            jump location_south_side_entry_1955
     else:
         "The south side."
         return
@@ -136,12 +232,28 @@ label location_barbershop:
         "The barbershop."
         return
 
+label location_geri_office:
+    if current_period == 1955:
+        jump location_geri_office_1955
+    else:
+        "The science hall office."
+        return
+
+label location_frank_office:
+    if current_period == 1955:
+        jump location_frank_office_1955
+    else:
+        "The police station."
+        return
+
 label location_mcswain_block:
-    "McSwain Block."
+    "McSwain Block — the theater, Woolworth's, and the bank."
     return
 
 label location_town_square:
-    "Town Square."
+    if current_period == 1955:
+        scene bg_town_square_1955 with dissolve
+    "The town square. City Hall's clock dome rises over the green."
     return
 
 label location_city_hall:
@@ -152,15 +264,15 @@ label location_city_hall:
         return
 
 label location_post_office:
-    "The post office."
+    "The Art Deco post office."
     return
 
 label location_train_station:
-    "The train station."
+    "The train station. A shimmer hangs over the far end of the platform."
     return
 
 label location_bus_station:
-    "The bus station."
+    "The bus station. A chalkboard lists the day's departures."
     return
 
 label location_tribal_office:
@@ -171,11 +283,11 @@ label location_tribal_office:
         return
 
 label location_blanton_factory:
-    "Blanton Manufacturing."
+    "Blanton Manufacturing. The smokestacks are running."
     return
 
 label location_college_campus:
-    "Middletown College."
+    "Middletown College. The quad, the admin building, the science hall."
     return
 
 label location_library:
@@ -200,5 +312,5 @@ label location_holloway_derrick:
         return
 
 label location_high_school_road:
-    "The road past the high school."
+    "The road past the high school. The building is visible but never open."
     return

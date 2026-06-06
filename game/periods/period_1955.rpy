@@ -178,10 +178,8 @@ label samuel_1955_explore:
     thought "Or I could go to George Runningwater at the IHS clinic. He has connections I don't."
     thought "Or I could take a walk. Marcus works the crossing signal after school."
 
-    "Mrs. Tanner is still waiting."
-    samuel "Mrs. Tanner. Come on back."
-
-    return
+    $ current_location = "beaumont_practice"
+    jump explore_1955
 
 
 # ---------------------------------------------------------------------------
@@ -313,7 +311,7 @@ label location_hospital_north_1955:
 # LOCATION: TRACKS CROSSING (1955)
 # ---------------------------------------------------------------------------
 
-label location_tracks_crossing_1955:
+label location_tracks_crossing_1955_samuel:
 
     $ mark_visited("tracks_crossing")
     call show_nav_bar
@@ -375,7 +373,7 @@ label location_tracks_crossing_1955:
 # LOCATION: IHS CLINIC (1955) — THE NUDGE
 # ---------------------------------------------------------------------------
 
-label location_ihs_clinic_1955:
+label location_ihs_clinic_1955_samuel:
 
     $ mark_visited("ihs_clinic")
     call show_nav_bar
@@ -573,7 +571,6 @@ label samuel_nudge_progressive_1955:
     $ nudge_1955 = "progressive"
     $ policy_score += 2
     $ thomas_status = "symbol"
-    $ runningwater_complaint = "surfaced"
 
     samuel "There's a physician at the north side hospital. Dr. Elias Webb. He came out of Howard Medical School."
     samuel "He has full privileges. He trained under people who understand what we're dealing with."

@@ -85,7 +85,7 @@ label frank_1955_explore:
     thought "The south side is a third place. I have not been there on official business that didn't involve putting someone in a car."
     thought "That is a fact I have not examined closely until this morning."
 
-    return
+    jump explore_1955
 
 
 # ---------------------------------------------------------------------------
@@ -288,7 +288,7 @@ label frank_1955_nudge:
 
 label frank_nudge_close_1955:
 
-    $ runningwater_complaint = "buried"
+    $ webb_case = "closed"
     $ policy_score -= 1
     $ nudge_1955 = "conservative"
 
@@ -323,7 +323,7 @@ label frank_nudge_close_1955:
 
 label frank_nudge_active_1955:
 
-    $ runningwater_complaint = "frank_background"
+    $ webb_case = "active"
     $ keepsake_notebook = True
     $ nudge_1955 = "middle"
 
@@ -392,7 +392,7 @@ label frank_nudge_active_1955:
 
 label frank_nudge_da_1955:
 
-    $ runningwater_complaint = "surfaced"
+    $ webb_case = "da"
     $ policy_score += 1
     $ keepsake_notebook = True
     $ nudge_1955 = "progressive"

@@ -62,7 +62,7 @@ label june_1955_explore:
         thought "Pruett and Gifford will be in by nine."
         thought "I should know what I'm going to say before they are."
 
-    return
+    jump explore_1955
 
 
 # ---------------------------------------------------------------------------
@@ -351,7 +351,7 @@ label june_derrick_scene:
 # LOCATION: IHS CLINIC (1955) — optional June visit for middle/progressive seeds
 # ---------------------------------------------------------------------------
 
-label location_ihs_clinic_june_1955:
+label location_ihs_clinic_1955_june:
 
     $ mark_visited("ihs_clinic")
     $ current_location = "ihs_clinic"
@@ -513,7 +513,7 @@ label june_nudge_middle_1955:
 
     "She finds the IHS clinic. The sign is small."
 
-    jump location_ihs_clinic_june_1955
+    jump location_ihs_clinic_1955_june
 
 
 label june_nudge_progressive_1955:

@@ -114,7 +114,7 @@ label carver_1955_explore:
         thought "I know where the VFW Hall is. I've walked past it a hundred times."
         thought "I have never walked in."
 
-    return
+    jump explore_1955
 
 
 # ---------------------------------------------------------------------------

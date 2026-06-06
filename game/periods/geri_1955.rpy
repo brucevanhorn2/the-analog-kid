@@ -20,10 +20,13 @@ label geri_1955_begin:
     "The office faces south. On a clear morning, through the window, you can see the tracks."
     "Three file cabinets. A drafting table covered in ledger paper."
     "Columns of numbers in her own hand, going back to 1915."
+    "A pack of Lucky Strikes at her right elbow. An ashtray that wants emptying."
 
     thought "Forty-two years of census cross-reference."
     thought "Property assessments. Mortality tables. Income quartiles."
     thought "All of it mapped. All of it split along a line you can draw with a ruler."
+
+    "She taps a Lucky Strike loose and lights it. The first of the day. It will not be the last."
 
     "She is working through the 1950 census supplemental — the one nobody uses because the columns are difficult."
     "She has been working through it since January."
@@ -42,6 +45,9 @@ label geri_1955_begin:
     thought "In one year. Not gradually. One year."
     thought "Nothing in the data explains it. Not income. Not the factory hire cycle. Not weather."
     thought "Something happened in 1947 that I haven't accounted for."
+
+    "The cigarette burns down untouched in the ashtray. She does not reach for it."
+    "When the numbers move, the hand forgets the habit."
 
     "She takes a blank index card from the desk drawer."
     "She writes the number in the center of the card in her clearest hand."
@@ -82,10 +88,11 @@ label geri_1955_explore:
 
     if not talked("agnes", "library", "field_notes"):
         thought "Agnes will be in by now. I should go to the library."
-    elif not keepsake_letter:
+    elif not keepsake_index_card:
         thought "The index card. I keep looking at it."
 
-    return
+    $ current_location = "geri_office"
+    jump explore_1955
 
 
 # ---------------------------------------------------------------------------
@@ -133,14 +140,14 @@ label location_geri_office_1955:
         "Thursday. Three o'clock. Faculty Club."
         thought "I have not responded."
 
-    if not keepsake_letter:
+    if not keepsake_index_card:
         "The index card is still on top of the stack."
         menu:
             "Leave the card on the desk.":
                 thought "It will still be here in the morning."
                 thought "The number will still be true in the morning."
             "Put it in your pocket.":
-                $ keepsake_letter = True
+                $ keepsake_index_card = True
                 thought "The card is small. It fits in the inside pocket of my jacket."
                 thought "I have carried equations in this pocket before."
                 thought "Under a clearance that no longer exists, on a ship that no longer puts out to sea."
@@ -162,6 +169,7 @@ label location_library_1955:
 
     "The MCC library. Agnes Pruitt has been its head librarian since 1938."
     "She keeps records the way other people keep secrets — carefully, and for good reason."
+    "You do not smoke in Agnes Pruitt's library. You never have. It was never discussed."
 
     if talked("agnes", "library", "field_notes"):
         "Agnes is at her cataloguing station. She looks up when Geri enters."
@@ -430,6 +438,7 @@ label geri_nudge_progressive_1955:
     thought "I checked. I checked twice. I had Agnes check."
 
     "She types the cover letter on her office typewriter."
+    "A Lucky Strike burns in the ashtray beside the carriage. She types around it."
     "State Statistics Office. Public Health Data Submission."
     "Forty years of Middletown census correlation, income, mortality, infrastructure — split by geography."
     "She does not soften it."
@@ -495,6 +504,19 @@ label geri_1955_period_end:
     "Not working. Just sitting."
     "The way you sit when the day's work is done and you need a moment before you go home."
 
+    "She lights the day's last Lucky Strike."
+
+    thought "I have spent four years mapping how this town dies."
+    thought "Income. Address. The water main that stops at the tracks."
+    thought "There is no column in my data for this one."
+
+    "She turns the cigarette a quarter-turn between two fingers, the way you examine a specimen."
+
+    thought "The studies exist. I've read them. The samples are small and the methods are thin."
+    thought "When the evidence is conclusive, I will account for it. I account for everything."
+    thought "It is not conclusive yet."
+    thought "It is 1955. I have time."
+
     thought "Forty-three years old."
     thought "I have been teaching sociology at this institution for four years."
     thought "I applied for the statistics department."
@@ -515,20 +537,20 @@ label geri_1955_period_end:
     "The number in the center."
     "The year. The question mark."
 
-    if not keepsake_letter:
+    if not keepsake_index_card:
         menu:
             "Leave the card on the desk.":
                 thought "It will still be here in the morning."
                 thought "The number will still be true in the morning."
             "Put it in your pocket.":
-                $ keepsake_letter = True
+                $ keepsake_index_card = True
                 thought "The card is small. It fits in the inside pocket of my jacket."
                 thought "I have carried equations in this pocket before."
                 thought "Under a clearance that no longer exists, on a ship that no longer puts out to sea."
                 thought "The number on this card is smaller than those equations."
                 thought "It is not less important."
 
-    if keepsake_letter:
+    if keepsake_index_card:
         thought "Fourteen percent."
         thought "In one year."
         thought "I will find what it is."

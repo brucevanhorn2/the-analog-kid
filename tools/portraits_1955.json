@@ -1,0 +1,25 @@
+[
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/portraits/samuel.png",
+   "prompt": "a dignified African American man in his late thirties, a small-town family doctor, short neat hair, crisp white dress shirt and dark tie, calm intelligent steady gaze",
+   "seed": 3101},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/portraits/ray.png",
+   "prompt": "a Native American man in his early thirties, a county social worker, short dark hair, modest brown suit and tie, composed watchful reserved expression",
+   "seed": 3102},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/portraits/geri.png",
+   "prompt": "a white woman in her mid thirties, a college statistics professor and former WWII Navy WAVES officer, short softly waved 1950s hair, cat-eye glasses, cardigan over a blouse, sharp analytical expression",
+   "seed": 3103},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/portraits/frank.png",
+   "prompt": "a white Italian-American man around forty, a police detective, weathered lined face, short dark hair combed back, gray suit with a loosened tie, tired but principled expression",
+   "seed": 3104},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/portraits/june.png",
+   "prompt": "a poised white woman in her mid thirties, a small-town city council member from a wealthy oil family, elegant 1950s hairstyle, pearl earrings, tailored blue dress, measured confident expression",
+   "seed": 3105},
+
+  {"out": "C:/Users/BruceVanHorn/Projects/the-analog-kid/game/images/portraits/carver.png",
+   "prompt": "a dignified white man in his late thirties, a Baptist minister and decorated war veteran, short neat hair, black clerical suit with white collar, warm steady reassuring gaze",
+   "seed": 3106}
+]
