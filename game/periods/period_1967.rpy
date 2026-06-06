@@ -9,6 +9,10 @@ label period_1967_begin:
 
     $ current_period = 1967
 
+    ## Authored 1967 threads route here; the rest fall through to the stub.
+    if player_char == "samuel":
+        jump samuel_1967_begin
+
     scene black with fade
     pause 0.5
 

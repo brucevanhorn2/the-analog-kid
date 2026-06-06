@@ -78,6 +78,24 @@ init python:
         "june":   "▸  To the council chamber",
     }
 
+    ## 1967 decision routing (self-contained nudge scenes).
+    PROCEED_LABELS_1967 = {
+        "samuel": "samuel_1967_nudge",
+    }
+    PROCEED_CAPTION_1967 = {
+        "samuel": "▸  Decide what to do about Darnell",
+    }
+
+    def proceed_label():
+        if store.current_period == 1967:
+            return PROCEED_LABELS_1967.get(store.player_char)
+        return PROCEED_LABELS.get(store.player_char)
+
+    def proceed_caption():
+        if store.current_period == 1967:
+            return PROCEED_CAPTION_1967.get(store.player_char, "▸  Continue")
+        return PROCEED_CAPTION.get(store.player_char, "▸  Continue")
+
     def get_exits(location):
         return NAV_GRAPH.get(location, [])
 
@@ -117,8 +135,8 @@ screen nav_bar(loc):
                         textbutton location_label(dest):
                             action Return(dest)
 
-            if player_char in PROCEED_LABELS:
-                textbutton PROCEED_CAPTION.get(player_char, "▸  Continue"):
+            if proceed_label():
+                textbutton proceed_caption():
                     xalign 0.5
                     action Return("__proceed__")
 
@@ -140,7 +158,7 @@ label explore_1955:
     while True:
         call screen nav_bar(current_location)
         if _return == "__proceed__":
-            jump expression PROCEED_LABELS[player_char]
+            jump expression proceed_label()
         $ current_location = _return
         $ mark_visited(_return)
         call expression "location_" + _return
@@ -161,6 +179,8 @@ label location_main_street:
 label location_beaumont_practice:
     if current_period == 1955:
         jump location_beaumont_practice_1955
+    elif current_period == 1967:
+        jump location_beaumont_practice_1967
     else:
         "Dr. Beaumont's practice."
         return
@@ -168,6 +188,8 @@ label location_beaumont_practice:
 label location_hospital_north:
     if current_period == 1955:
         jump location_hospital_north_1955
+    elif current_period == 1967:
+        jump location_hospital_north_1967
     else:
         "The north side hospital."
         return
@@ -180,6 +202,8 @@ label location_ihs_clinic:
             jump location_ihs_clinic_1955_june
         else:
             jump location_ihs_clinic_1955_samuel
+    elif current_period == 1967:
+        jump location_ihs_clinic_1967
     else:
         "The IHS clinic."
         return
@@ -190,6 +214,8 @@ label location_tracks_crossing:
             jump location_tracks_crossing_1955_ray
         else:
             jump location_tracks_crossing_1955_samuel
+    elif current_period == 1967:
+        jump location_tracks_crossing_1967
     else:
         "The tracks crossing."
         return
@@ -242,6 +268,8 @@ label location_geri_office:
 label location_frank_office:
     if current_period == 1955:
         jump location_frank_office_1955
+    elif current_period == 1967:
+        jump location_frank_office_1967
     else:
         "The police station."
         return
